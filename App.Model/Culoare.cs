@@ -4,7 +4,7 @@
     {
         Rosu,
         Verde,
-        Galben,
-        Albastru
+        Albastru,
+        Galben
     }
 }
