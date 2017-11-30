@@ -1,4 +1,6 @@
-﻿namespace Casuta.UserControl
+﻿using System.Windows.Forms;
+
+namespace Casuta.UserControl
 {
     partial class Casuta
     {
@@ -6,6 +8,12 @@
         /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
+
+        public PictureBox ImaginePion
+        {
+            get { return imaginePion; }
+            set { imaginePion = value; }
+        }
 
         /// <summary>
         /// Clean up any resources being used.
@@ -48,6 +56,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Transparent;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Controls.Add(this.imaginePion);
             this.Name = "Casuta";
             ((System.ComponentModel.ISupportInitialize)(this.imaginePion)).EndInit();

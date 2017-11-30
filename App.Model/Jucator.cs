@@ -8,8 +8,9 @@ namespace App.Model
 {
     public class Jucator
     {
+        private int id;
         private string nume;
-        private Culoare culoareJucator;
+        private Culoare culoare;
         private Pion[] pioni;
     }
 }

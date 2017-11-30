@@ -27,5 +27,20 @@ namespace Proiect_AppUI
                 TopMost = false;
             }
         }
+
+        private void casuta_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void aruncaZarulBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void terminaTuraBtn_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
