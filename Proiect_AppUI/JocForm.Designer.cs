@@ -313,6 +313,7 @@
             this.casuta1.Size = new System.Drawing.Size(57, 51);
             this.casuta1.TabIndex = 79;
             this.casuta1.TipCasuta = Casuta.UserControl.TipCasuta.Home;
+            this.casuta1.Click += new System.EventHandler(this.casuta_Click);
             this.casuta1.Enter += new System.EventHandler(this.casuta_Enter);
             // 
             // casuta2
@@ -328,6 +329,7 @@
             this.casuta2.Size = new System.Drawing.Size(57, 51);
             this.casuta2.TabIndex = 80;
             this.casuta2.TipCasuta = Casuta.UserControl.TipCasuta.Home;
+            this.casuta2.Click += new System.EventHandler(this.casuta_Click);
             this.casuta2.Enter += new System.EventHandler(this.casuta_Enter);
             // 
             // casuta3
@@ -343,6 +345,7 @@
             this.casuta3.Size = new System.Drawing.Size(57, 51);
             this.casuta3.TabIndex = 81;
             this.casuta3.TipCasuta = Casuta.UserControl.TipCasuta.Home;
+            this.casuta3.Click += new System.EventHandler(this.casuta_Click);
             this.casuta3.Enter += new System.EventHandler(this.casuta_Enter);
             // 
             // casuta4
@@ -358,6 +361,7 @@
             this.casuta4.Size = new System.Drawing.Size(57, 51);
             this.casuta4.TabIndex = 82;
             this.casuta4.TipCasuta = Casuta.UserControl.TipCasuta.Home;
+            this.casuta4.Click += new System.EventHandler(this.casuta_Click);
             this.casuta4.Enter += new System.EventHandler(this.casuta_Enter);
             // 
             // casuta5
@@ -373,6 +377,7 @@
             this.casuta5.Size = new System.Drawing.Size(57, 51);
             this.casuta5.TabIndex = 83;
             this.casuta5.TipCasuta = Casuta.UserControl.TipCasuta.Home;
+            this.casuta5.Click += new System.EventHandler(this.casuta_Click);
             this.casuta5.Enter += new System.EventHandler(this.casuta_Enter);
             // 
             // casuta6
@@ -388,6 +393,7 @@
             this.casuta6.Size = new System.Drawing.Size(60, 51);
             this.casuta6.TabIndex = 84;
             this.casuta6.TipCasuta = Casuta.UserControl.TipCasuta.Home;
+            this.casuta6.Click += new System.EventHandler(this.casuta_Click);
             this.casuta6.Enter += new System.EventHandler(this.casuta_Enter);
             // 
             // casuta7
@@ -403,6 +409,7 @@
             this.casuta7.Size = new System.Drawing.Size(57, 51);
             this.casuta7.TabIndex = 85;
             this.casuta7.TipCasuta = Casuta.UserControl.TipCasuta.Home;
+            this.casuta7.Click += new System.EventHandler(this.casuta_Click);
             this.casuta7.Enter += new System.EventHandler(this.casuta_Enter);
             // 
             // casuta8
@@ -418,6 +425,7 @@
             this.casuta8.Size = new System.Drawing.Size(60, 51);
             this.casuta8.TabIndex = 86;
             this.casuta8.TipCasuta = Casuta.UserControl.TipCasuta.Home;
+            this.casuta8.Click += new System.EventHandler(this.casuta_Click);
             this.casuta8.Enter += new System.EventHandler(this.casuta_Enter);
             // 
             // casuta9
@@ -433,6 +441,7 @@
             this.casuta9.Size = new System.Drawing.Size(57, 51);
             this.casuta9.TabIndex = 87;
             this.casuta9.TipCasuta = Casuta.UserControl.TipCasuta.Home;
+            this.casuta9.Click += new System.EventHandler(this.casuta_Click);
             this.casuta9.Enter += new System.EventHandler(this.casuta_Enter);
             // 
             // casuta10
@@ -448,6 +457,7 @@
             this.casuta10.Size = new System.Drawing.Size(60, 51);
             this.casuta10.TabIndex = 88;
             this.casuta10.TipCasuta = Casuta.UserControl.TipCasuta.Home;
+            this.casuta10.Click += new System.EventHandler(this.casuta_Click);
             this.casuta10.Enter += new System.EventHandler(this.casuta_Enter);
             // 
             // casuta11
@@ -463,6 +473,7 @@
             this.casuta11.Size = new System.Drawing.Size(57, 57);
             this.casuta11.TabIndex = 89;
             this.casuta11.TipCasuta = Casuta.UserControl.TipCasuta.Home;
+            this.casuta11.Click += new System.EventHandler(this.casuta_Click);
             this.casuta11.Enter += new System.EventHandler(this.casuta_Enter);
             // 
             // casuta12
@@ -478,6 +489,7 @@
             this.casuta12.Size = new System.Drawing.Size(60, 57);
             this.casuta12.TabIndex = 90;
             this.casuta12.TipCasuta = Casuta.UserControl.TipCasuta.Home;
+            this.casuta12.Click += new System.EventHandler(this.casuta_Click);
             this.casuta12.Enter += new System.EventHandler(this.casuta_Enter);
             // 
             // casuta13
@@ -493,6 +505,7 @@
             this.casuta13.Size = new System.Drawing.Size(57, 51);
             this.casuta13.TabIndex = 91;
             this.casuta13.TipCasuta = Casuta.UserControl.TipCasuta.Home;
+            this.casuta13.Click += new System.EventHandler(this.casuta_Click);
             this.casuta13.Enter += new System.EventHandler(this.casuta_Enter);
             // 
             // casuta14
@@ -508,6 +521,7 @@
             this.casuta14.Size = new System.Drawing.Size(57, 51);
             this.casuta14.TabIndex = 92;
             this.casuta14.TipCasuta = Casuta.UserControl.TipCasuta.Home;
+            this.casuta14.Click += new System.EventHandler(this.casuta_Click);
             this.casuta14.Enter += new System.EventHandler(this.casuta_Enter);
             // 
             // casuta15
@@ -523,6 +537,7 @@
             this.casuta15.Size = new System.Drawing.Size(57, 57);
             this.casuta15.TabIndex = 93;
             this.casuta15.TipCasuta = Casuta.UserControl.TipCasuta.Home;
+            this.casuta15.Click += new System.EventHandler(this.casuta_Click);
             this.casuta15.Enter += new System.EventHandler(this.casuta_Enter);
             // 
             // casuta16
@@ -538,6 +553,7 @@
             this.casuta16.Size = new System.Drawing.Size(57, 57);
             this.casuta16.TabIndex = 94;
             this.casuta16.TipCasuta = Casuta.UserControl.TipCasuta.Home;
+            this.casuta16.Click += new System.EventHandler(this.casuta_Click);
             this.casuta16.Enter += new System.EventHandler(this.casuta_Enter);
             // 
             // casuta17
@@ -553,6 +569,7 @@
             this.casuta17.Size = new System.Drawing.Size(57, 57);
             this.casuta17.TabIndex = 95;
             this.casuta17.TipCasuta = Casuta.UserControl.TipCasuta.Home;
+            this.casuta17.Click += new System.EventHandler(this.casuta_Click);
             this.casuta17.Enter += new System.EventHandler(this.casuta_Enter);
             // 
             // casuta18
@@ -568,6 +585,7 @@
             this.casuta18.Size = new System.Drawing.Size(57, 51);
             this.casuta18.TabIndex = 96;
             this.casuta18.TipCasuta = Casuta.UserControl.TipCasuta.Home;
+            this.casuta18.Click += new System.EventHandler(this.casuta_Click);
             this.casuta18.Enter += new System.EventHandler(this.casuta_Enter);
             // 
             // casuta19
@@ -583,6 +601,7 @@
             this.casuta19.Size = new System.Drawing.Size(57, 51);
             this.casuta19.TabIndex = 97;
             this.casuta19.TipCasuta = Casuta.UserControl.TipCasuta.Home;
+            this.casuta19.Click += new System.EventHandler(this.casuta_Click);
             this.casuta19.Enter += new System.EventHandler(this.casuta_Enter);
             // 
             // casuta20
@@ -598,6 +617,7 @@
             this.casuta20.Size = new System.Drawing.Size(57, 51);
             this.casuta20.TabIndex = 98;
             this.casuta20.TipCasuta = Casuta.UserControl.TipCasuta.Home;
+            this.casuta20.Click += new System.EventHandler(this.casuta_Click);
             this.casuta20.Enter += new System.EventHandler(this.casuta_Enter);
             // 
             // casuta21
@@ -613,6 +633,7 @@
             this.casuta21.Size = new System.Drawing.Size(57, 51);
             this.casuta21.TabIndex = 99;
             this.casuta21.TipCasuta = Casuta.UserControl.TipCasuta.Home;
+            this.casuta21.Click += new System.EventHandler(this.casuta_Click);
             this.casuta21.Enter += new System.EventHandler(this.casuta_Enter);
             // 
             // casuta22
@@ -628,6 +649,7 @@
             this.casuta22.Size = new System.Drawing.Size(57, 51);
             this.casuta22.TabIndex = 100;
             this.casuta22.TipCasuta = Casuta.UserControl.TipCasuta.Home;
+            this.casuta22.Click += new System.EventHandler(this.casuta_Click);
             this.casuta22.Enter += new System.EventHandler(this.casuta_Enter);
             // 
             // casuta23
@@ -643,6 +665,7 @@
             this.casuta23.Size = new System.Drawing.Size(57, 51);
             this.casuta23.TabIndex = 101;
             this.casuta23.TipCasuta = Casuta.UserControl.TipCasuta.Home;
+            this.casuta23.Click += new System.EventHandler(this.casuta_Click);
             this.casuta23.Enter += new System.EventHandler(this.casuta_Enter);
             // 
             // casuta24
@@ -658,6 +681,7 @@
             this.casuta24.Size = new System.Drawing.Size(57, 51);
             this.casuta24.TabIndex = 102;
             this.casuta24.TipCasuta = Casuta.UserControl.TipCasuta.Home;
+            this.casuta24.Click += new System.EventHandler(this.casuta_Click);
             this.casuta24.Enter += new System.EventHandler(this.casuta_Enter);
             // 
             // casuta25
@@ -673,6 +697,7 @@
             this.casuta25.Size = new System.Drawing.Size(57, 51);
             this.casuta25.TabIndex = 103;
             this.casuta25.TipCasuta = Casuta.UserControl.TipCasuta.Home;
+            this.casuta25.Click += new System.EventHandler(this.casuta_Click);
             this.casuta25.Enter += new System.EventHandler(this.casuta_Enter);
             // 
             // casuta26
@@ -688,6 +713,7 @@
             this.casuta26.Size = new System.Drawing.Size(57, 51);
             this.casuta26.TabIndex = 104;
             this.casuta26.TipCasuta = Casuta.UserControl.TipCasuta.Home;
+            this.casuta26.Click += new System.EventHandler(this.casuta_Click);
             this.casuta26.Enter += new System.EventHandler(this.casuta_Enter);
             // 
             // casuta27
@@ -703,6 +729,7 @@
             this.casuta27.Size = new System.Drawing.Size(57, 51);
             this.casuta27.TabIndex = 105;
             this.casuta27.TipCasuta = Casuta.UserControl.TipCasuta.Home;
+            this.casuta27.Click += new System.EventHandler(this.casuta_Click);
             this.casuta27.Enter += new System.EventHandler(this.casuta_Enter);
             // 
             // casuta28
@@ -718,6 +745,7 @@
             this.casuta28.Size = new System.Drawing.Size(57, 51);
             this.casuta28.TabIndex = 106;
             this.casuta28.TipCasuta = Casuta.UserControl.TipCasuta.Home;
+            this.casuta28.Click += new System.EventHandler(this.casuta_Click);
             this.casuta28.Enter += new System.EventHandler(this.casuta_Enter);
             // 
             // casuta29
@@ -733,6 +761,7 @@
             this.casuta29.Size = new System.Drawing.Size(57, 51);
             this.casuta29.TabIndex = 107;
             this.casuta29.TipCasuta = Casuta.UserControl.TipCasuta.Home;
+            this.casuta29.Click += new System.EventHandler(this.casuta_Click);
             this.casuta29.Enter += new System.EventHandler(this.casuta_Enter);
             // 
             // casuta30
@@ -748,6 +777,7 @@
             this.casuta30.Size = new System.Drawing.Size(57, 51);
             this.casuta30.TabIndex = 108;
             this.casuta30.TipCasuta = Casuta.UserControl.TipCasuta.Home;
+            this.casuta30.Click += new System.EventHandler(this.casuta_Click);
             this.casuta30.Enter += new System.EventHandler(this.casuta_Enter);
             // 
             // casuta31
@@ -763,6 +793,7 @@
             this.casuta31.Size = new System.Drawing.Size(57, 51);
             this.casuta31.TabIndex = 109;
             this.casuta31.TipCasuta = Casuta.UserControl.TipCasuta.Home;
+            this.casuta31.Click += new System.EventHandler(this.casuta_Click);
             this.casuta31.Enter += new System.EventHandler(this.casuta_Enter);
             // 
             // casuta32
@@ -778,6 +809,7 @@
             this.casuta32.Size = new System.Drawing.Size(57, 51);
             this.casuta32.TabIndex = 110;
             this.casuta32.TipCasuta = Casuta.UserControl.TipCasuta.Home;
+            this.casuta32.Click += new System.EventHandler(this.casuta_Click);
             this.casuta32.Enter += new System.EventHandler(this.casuta_Enter);
             // 
             // casuta33
@@ -793,6 +825,7 @@
             this.casuta33.Size = new System.Drawing.Size(57, 51);
             this.casuta33.TabIndex = 111;
             this.casuta33.TipCasuta = Casuta.UserControl.TipCasuta.Home;
+            this.casuta33.Click += new System.EventHandler(this.casuta_Click);
             this.casuta33.Enter += new System.EventHandler(this.casuta_Enter);
             // 
             // casuta34
@@ -808,6 +841,7 @@
             this.casuta34.Size = new System.Drawing.Size(57, 51);
             this.casuta34.TabIndex = 112;
             this.casuta34.TipCasuta = Casuta.UserControl.TipCasuta.Home;
+            this.casuta34.Click += new System.EventHandler(this.casuta_Click);
             this.casuta34.Enter += new System.EventHandler(this.casuta_Enter);
             // 
             // casuta35
@@ -823,6 +857,7 @@
             this.casuta35.Size = new System.Drawing.Size(57, 51);
             this.casuta35.TabIndex = 113;
             this.casuta35.TipCasuta = Casuta.UserControl.TipCasuta.Home;
+            this.casuta35.Click += new System.EventHandler(this.casuta_Click);
             this.casuta35.Enter += new System.EventHandler(this.casuta_Enter);
             // 
             // casuta36
@@ -838,6 +873,7 @@
             this.casuta36.Size = new System.Drawing.Size(57, 51);
             this.casuta36.TabIndex = 114;
             this.casuta36.TipCasuta = Casuta.UserControl.TipCasuta.Home;
+            this.casuta36.Click += new System.EventHandler(this.casuta_Click);
             this.casuta36.Enter += new System.EventHandler(this.casuta_Enter);
             // 
             // casuta37
@@ -853,6 +889,7 @@
             this.casuta37.Size = new System.Drawing.Size(57, 51);
             this.casuta37.TabIndex = 115;
             this.casuta37.TipCasuta = Casuta.UserControl.TipCasuta.Home;
+            this.casuta37.Click += new System.EventHandler(this.casuta_Click);
             this.casuta37.Enter += new System.EventHandler(this.casuta_Enter);
             // 
             // casuta38
@@ -868,6 +905,7 @@
             this.casuta38.Size = new System.Drawing.Size(57, 51);
             this.casuta38.TabIndex = 116;
             this.casuta38.TipCasuta = Casuta.UserControl.TipCasuta.Home;
+            this.casuta38.Click += new System.EventHandler(this.casuta_Click);
             this.casuta38.Enter += new System.EventHandler(this.casuta_Enter);
             // 
             // casuta39
@@ -883,6 +921,7 @@
             this.casuta39.Size = new System.Drawing.Size(57, 51);
             this.casuta39.TabIndex = 117;
             this.casuta39.TipCasuta = Casuta.UserControl.TipCasuta.Home;
+            this.casuta39.Click += new System.EventHandler(this.casuta_Click);
             this.casuta39.Enter += new System.EventHandler(this.casuta_Enter);
             // 
             // casuta40
@@ -898,6 +937,7 @@
             this.casuta40.Size = new System.Drawing.Size(57, 51);
             this.casuta40.TabIndex = 118;
             this.casuta40.TipCasuta = Casuta.UserControl.TipCasuta.Home;
+            this.casuta40.Click += new System.EventHandler(this.casuta_Click);
             this.casuta40.Enter += new System.EventHandler(this.casuta_Enter);
             // 
             // casuta41
@@ -913,6 +953,7 @@
             this.casuta41.Size = new System.Drawing.Size(57, 51);
             this.casuta41.TabIndex = 119;
             this.casuta41.TipCasuta = Casuta.UserControl.TipCasuta.Home;
+            this.casuta41.Click += new System.EventHandler(this.casuta_Click);
             this.casuta41.Enter += new System.EventHandler(this.casuta_Enter);
             // 
             // casuta42
@@ -928,6 +969,7 @@
             this.casuta42.Size = new System.Drawing.Size(57, 51);
             this.casuta42.TabIndex = 120;
             this.casuta42.TipCasuta = Casuta.UserControl.TipCasuta.Home;
+            this.casuta42.Click += new System.EventHandler(this.casuta_Click);
             this.casuta42.Enter += new System.EventHandler(this.casuta_Enter);
             // 
             // casuta43
@@ -943,6 +985,7 @@
             this.casuta43.Size = new System.Drawing.Size(57, 51);
             this.casuta43.TabIndex = 121;
             this.casuta43.TipCasuta = Casuta.UserControl.TipCasuta.Home;
+            this.casuta43.Click += new System.EventHandler(this.casuta_Click);
             this.casuta43.Enter += new System.EventHandler(this.casuta_Enter);
             // 
             // casuta44
@@ -958,6 +1001,7 @@
             this.casuta44.Size = new System.Drawing.Size(57, 51);
             this.casuta44.TabIndex = 122;
             this.casuta44.TipCasuta = Casuta.UserControl.TipCasuta.Home;
+            this.casuta44.Click += new System.EventHandler(this.casuta_Click);
             this.casuta44.Enter += new System.EventHandler(this.casuta_Enter);
             // 
             // casuta45
@@ -973,6 +1017,7 @@
             this.casuta45.Size = new System.Drawing.Size(60, 51);
             this.casuta45.TabIndex = 123;
             this.casuta45.TipCasuta = Casuta.UserControl.TipCasuta.Home;
+            this.casuta45.Click += new System.EventHandler(this.casuta_Click);
             this.casuta45.Enter += new System.EventHandler(this.casuta_Enter);
             // 
             // casuta46
@@ -988,6 +1033,7 @@
             this.casuta46.Size = new System.Drawing.Size(60, 51);
             this.casuta46.TabIndex = 124;
             this.casuta46.TipCasuta = Casuta.UserControl.TipCasuta.Home;
+            this.casuta46.Click += new System.EventHandler(this.casuta_Click);
             this.casuta46.Enter += new System.EventHandler(this.casuta_Enter);
             // 
             // casuta47
@@ -1003,6 +1049,7 @@
             this.casuta47.Size = new System.Drawing.Size(60, 51);
             this.casuta47.TabIndex = 125;
             this.casuta47.TipCasuta = Casuta.UserControl.TipCasuta.Home;
+            this.casuta47.Click += new System.EventHandler(this.casuta_Click);
             this.casuta47.Enter += new System.EventHandler(this.casuta_Enter);
             // 
             // casuta48
@@ -1018,6 +1065,7 @@
             this.casuta48.Size = new System.Drawing.Size(57, 51);
             this.casuta48.TabIndex = 126;
             this.casuta48.TipCasuta = Casuta.UserControl.TipCasuta.Home;
+            this.casuta48.Click += new System.EventHandler(this.casuta_Click);
             this.casuta48.Enter += new System.EventHandler(this.casuta_Enter);
             // 
             // casuta49
@@ -1033,6 +1081,7 @@
             this.casuta49.Size = new System.Drawing.Size(57, 51);
             this.casuta49.TabIndex = 127;
             this.casuta49.TipCasuta = Casuta.UserControl.TipCasuta.Home;
+            this.casuta49.Click += new System.EventHandler(this.casuta_Click);
             this.casuta49.Enter += new System.EventHandler(this.casuta_Enter);
             // 
             // casuta50
@@ -1048,6 +1097,7 @@
             this.casuta50.Size = new System.Drawing.Size(57, 51);
             this.casuta50.TabIndex = 128;
             this.casuta50.TipCasuta = Casuta.UserControl.TipCasuta.Home;
+            this.casuta50.Click += new System.EventHandler(this.casuta_Click);
             this.casuta50.Enter += new System.EventHandler(this.casuta_Enter);
             // 
             // casuta51
@@ -1063,6 +1113,7 @@
             this.casuta51.Size = new System.Drawing.Size(57, 51);
             this.casuta51.TabIndex = 129;
             this.casuta51.TipCasuta = Casuta.UserControl.TipCasuta.Home;
+            this.casuta51.Click += new System.EventHandler(this.casuta_Click);
             this.casuta51.Enter += new System.EventHandler(this.casuta_Enter);
             // 
             // casuta52
@@ -1078,6 +1129,7 @@
             this.casuta52.Size = new System.Drawing.Size(57, 51);
             this.casuta52.TabIndex = 130;
             this.casuta52.TipCasuta = Casuta.UserControl.TipCasuta.Home;
+            this.casuta52.Click += new System.EventHandler(this.casuta_Click);
             this.casuta52.Enter += new System.EventHandler(this.casuta_Enter);
             // 
             // casuta53
@@ -1093,6 +1145,7 @@
             this.casuta53.Size = new System.Drawing.Size(57, 51);
             this.casuta53.TabIndex = 131;
             this.casuta53.TipCasuta = Casuta.UserControl.TipCasuta.Home;
+            this.casuta53.Click += new System.EventHandler(this.casuta_Click);
             this.casuta53.Enter += new System.EventHandler(this.casuta_Enter);
             // 
             // casuta54
@@ -1108,6 +1161,7 @@
             this.casuta54.Size = new System.Drawing.Size(57, 51);
             this.casuta54.TabIndex = 132;
             this.casuta54.TipCasuta = Casuta.UserControl.TipCasuta.Home;
+            this.casuta54.Click += new System.EventHandler(this.casuta_Click);
             this.casuta54.Enter += new System.EventHandler(this.casuta_Enter);
             // 
             // casuta55
@@ -1123,6 +1177,7 @@
             this.casuta55.Size = new System.Drawing.Size(57, 57);
             this.casuta55.TabIndex = 133;
             this.casuta55.TipCasuta = Casuta.UserControl.TipCasuta.Home;
+            this.casuta55.Click += new System.EventHandler(this.casuta_Click);
             this.casuta55.Enter += new System.EventHandler(this.casuta_Enter);
             // 
             // casuta56
@@ -1138,6 +1193,7 @@
             this.casuta56.Size = new System.Drawing.Size(57, 57);
             this.casuta56.TabIndex = 134;
             this.casuta56.TipCasuta = Casuta.UserControl.TipCasuta.Home;
+            this.casuta56.Click += new System.EventHandler(this.casuta_Click);
             this.casuta56.Enter += new System.EventHandler(this.casuta_Enter);
             // 
             // casuta57
@@ -1153,6 +1209,7 @@
             this.casuta57.Size = new System.Drawing.Size(57, 51);
             this.casuta57.TabIndex = 135;
             this.casuta57.TipCasuta = Casuta.UserControl.TipCasuta.Home;
+            this.casuta57.Click += new System.EventHandler(this.casuta_Click);
             this.casuta57.Enter += new System.EventHandler(this.casuta_Enter);
             // 
             // casuta58
@@ -1168,6 +1225,7 @@
             this.casuta58.Size = new System.Drawing.Size(57, 51);
             this.casuta58.TabIndex = 136;
             this.casuta58.TipCasuta = Casuta.UserControl.TipCasuta.Home;
+            this.casuta58.Click += new System.EventHandler(this.casuta_Click);
             this.casuta58.Enter += new System.EventHandler(this.casuta_Enter);
             // 
             // casuta59
@@ -1183,6 +1241,7 @@
             this.casuta59.Size = new System.Drawing.Size(57, 51);
             this.casuta59.TabIndex = 137;
             this.casuta59.TipCasuta = Casuta.UserControl.TipCasuta.Home;
+            this.casuta59.Click += new System.EventHandler(this.casuta_Click);
             this.casuta59.Enter += new System.EventHandler(this.casuta_Enter);
             // 
             // casuta60
@@ -1198,6 +1257,7 @@
             this.casuta60.Size = new System.Drawing.Size(57, 51);
             this.casuta60.TabIndex = 138;
             this.casuta60.TipCasuta = Casuta.UserControl.TipCasuta.Home;
+            this.casuta60.Click += new System.EventHandler(this.casuta_Click);
             this.casuta60.Enter += new System.EventHandler(this.casuta_Enter);
             // 
             // casuta61
@@ -1213,6 +1273,7 @@
             this.casuta61.Size = new System.Drawing.Size(57, 51);
             this.casuta61.TabIndex = 139;
             this.casuta61.TipCasuta = Casuta.UserControl.TipCasuta.Home;
+            this.casuta61.Click += new System.EventHandler(this.casuta_Click);
             this.casuta61.Enter += new System.EventHandler(this.casuta_Enter);
             // 
             // casuta62
@@ -1228,6 +1289,7 @@
             this.casuta62.Size = new System.Drawing.Size(57, 51);
             this.casuta62.TabIndex = 140;
             this.casuta62.TipCasuta = Casuta.UserControl.TipCasuta.Home;
+            this.casuta62.Click += new System.EventHandler(this.casuta_Click);
             this.casuta62.Enter += new System.EventHandler(this.casuta_Enter);
             // 
             // casuta63
@@ -1243,6 +1305,7 @@
             this.casuta63.Size = new System.Drawing.Size(57, 51);
             this.casuta63.TabIndex = 141;
             this.casuta63.TipCasuta = Casuta.UserControl.TipCasuta.Home;
+            this.casuta63.Click += new System.EventHandler(this.casuta_Click);
             this.casuta63.Enter += new System.EventHandler(this.casuta_Enter);
             // 
             // casuta64
@@ -1258,6 +1321,7 @@
             this.casuta64.Size = new System.Drawing.Size(57, 51);
             this.casuta64.TabIndex = 142;
             this.casuta64.TipCasuta = Casuta.UserControl.TipCasuta.Home;
+            this.casuta64.Click += new System.EventHandler(this.casuta_Click);
             this.casuta64.Enter += new System.EventHandler(this.casuta_Enter);
             // 
             // casuta65
@@ -1273,6 +1337,7 @@
             this.casuta65.Size = new System.Drawing.Size(57, 51);
             this.casuta65.TabIndex = 143;
             this.casuta65.TipCasuta = Casuta.UserControl.TipCasuta.Home;
+            this.casuta65.Click += new System.EventHandler(this.casuta_Click);
             this.casuta65.Enter += new System.EventHandler(this.casuta_Enter);
             // 
             // casuta66
@@ -1288,6 +1353,7 @@
             this.casuta66.Size = new System.Drawing.Size(57, 51);
             this.casuta66.TabIndex = 144;
             this.casuta66.TipCasuta = Casuta.UserControl.TipCasuta.Home;
+            this.casuta66.Click += new System.EventHandler(this.casuta_Click);
             this.casuta66.Enter += new System.EventHandler(this.casuta_Enter);
             // 
             // casuta67
@@ -1303,6 +1369,7 @@
             this.casuta67.Size = new System.Drawing.Size(57, 51);
             this.casuta67.TabIndex = 145;
             this.casuta67.TipCasuta = Casuta.UserControl.TipCasuta.Home;
+            this.casuta67.Click += new System.EventHandler(this.casuta_Click);
             this.casuta67.Enter += new System.EventHandler(this.casuta_Enter);
             // 
             // casuta68
@@ -1318,6 +1385,7 @@
             this.casuta68.Size = new System.Drawing.Size(57, 51);
             this.casuta68.TabIndex = 146;
             this.casuta68.TipCasuta = Casuta.UserControl.TipCasuta.Home;
+            this.casuta68.Click += new System.EventHandler(this.casuta_Click);
             this.casuta68.Enter += new System.EventHandler(this.casuta_Enter);
             // 
             // casuta69
@@ -1333,6 +1401,7 @@
             this.casuta69.Size = new System.Drawing.Size(57, 51);
             this.casuta69.TabIndex = 147;
             this.casuta69.TipCasuta = Casuta.UserControl.TipCasuta.Home;
+            this.casuta69.Click += new System.EventHandler(this.casuta_Click);
             this.casuta69.Enter += new System.EventHandler(this.casuta_Enter);
             // 
             // casuta70
@@ -1348,6 +1417,7 @@
             this.casuta70.Size = new System.Drawing.Size(57, 51);
             this.casuta70.TabIndex = 148;
             this.casuta70.TipCasuta = Casuta.UserControl.TipCasuta.Home;
+            this.casuta70.Click += new System.EventHandler(this.casuta_Click);
             this.casuta70.Enter += new System.EventHandler(this.casuta_Enter);
             // 
             // casuta71
@@ -1363,6 +1433,7 @@
             this.casuta71.Size = new System.Drawing.Size(57, 51);
             this.casuta71.TabIndex = 149;
             this.casuta71.TipCasuta = Casuta.UserControl.TipCasuta.Home;
+            this.casuta71.Click += new System.EventHandler(this.casuta_Click);
             this.casuta71.Enter += new System.EventHandler(this.casuta_Enter);
             // 
             // casuta72
@@ -1378,6 +1449,7 @@
             this.casuta72.Size = new System.Drawing.Size(57, 51);
             this.casuta72.TabIndex = 150;
             this.casuta72.TipCasuta = Casuta.UserControl.TipCasuta.Home;
+            this.casuta72.Click += new System.EventHandler(this.casuta_Click);
             this.casuta72.Enter += new System.EventHandler(this.casuta_Enter);
             // 
             // controalePanel
@@ -1455,9 +1527,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1060, 573);
             this.Controls.Add(this.containerPanel);
+            this.KeyPreview = true;
             this.Name = "JocForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Nu te supara frate";
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.JocForm_KeyDown);
             this.containerPanel.ResumeLayout(false);
             this.plansaJocPanel.ResumeLayout(false);
             this.plansaJocPanel.PerformLayout();
