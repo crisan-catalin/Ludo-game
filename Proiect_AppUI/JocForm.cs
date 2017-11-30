@@ -17,16 +17,6 @@ namespace Proiect_AppUI
             InitializeComponent();
         }
 
-        private void JocForm_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (FormBorderStyle == FormBorderStyle.None && WindowState == FormWindowState.Maximized &&
-                e.KeyCode == Keys.Escape)
-            {
-                FormBorderStyle = FormBorderStyle.Sizable;
-                WindowState = FormWindowState.Normal;
-                TopMost = false;
-            }
-        }
 
         private void casuta_Enter(object sender, EventArgs e)
         {
@@ -41,6 +31,22 @@ namespace Proiect_AppUI
         private void terminaTuraBtn_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void casuta_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void JocForm_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (FormBorderStyle == FormBorderStyle.None && WindowState == FormWindowState.Maximized &&
+                e.KeyCode == Keys.Escape)
+            {
+                FormBorderStyle = FormBorderStyle.Sizable;
+                WindowState = FormWindowState.Normal;
+                TopMost = false;
+            }
         }
     }
 }
