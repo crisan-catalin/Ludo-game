@@ -58,6 +58,10 @@
     <Compile Include="JocForm.Designer.cs">
       <DependentUpon>JocForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Model\Culoare.cs" />
+    <Compile Include="Model\Jucator.cs" />
+    <Compile Include="Model\Pion.cs" />
+    <Compile Include="Presenter\PioniPresenter.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="ConfigurareJocForm.resx">
@@ -207,10 +211,17 @@
     <None Include="Resources\yellow.png" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Constants\Constants.csproj">
+      <Project>{1E99F3EE-3733-4253-A36B-4A915AACF8F6}</Project>
+      <Name>Constants</Name>
+    </ProjectReference>
     <ProjectReference Include="..\WindowsFormsControlLibrary1\Casuta.UserControl.csproj">
       <Project>{A44A2C18-5AEA-468C-8F00-0CF514D7FB33}</Project>
       <Name>Casuta.UserControl</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="View\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

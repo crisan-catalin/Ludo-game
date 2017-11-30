@@ -1,12 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using Proiect_AppUI.Presenter;
 using Proiect_AppUI.Properties;
 
 namespace Proiect_AppUI
@@ -81,6 +77,28 @@ namespace Proiect_AppUI
             }
         }
 
+        private void SeteazaListaJucatori(JocForm joc)
+        {
+            joc.NumeJucatori = new List<string>(nrJucatoriTrckBr.Value);
+            switch (nrJucatoriTrckBr.Value)
+            {
+                case 2:
+                    joc.NumeJucatori.Add(numeJ1TextField.Text);
+                    joc.NumeJucatori.Add(numeJ2TextField.Text);
+                    break;
+                case 3:
+                    joc.NumeJucatori.Add(numeJ1TextField.Text);
+                    joc.NumeJucatori.Add(numeJ2TextField.Text);
+                    joc.NumeJucatori.Add(numeJ3TextField.Text);
+                    break;
+                case 4:
+                    joc.NumeJucatori.Add(numeJ1TextField.Text);
+                    joc.NumeJucatori.Add(numeJ2TextField.Text);
+                    joc.NumeJucatori.Add(numeJ3TextField.Text);
+                    joc.NumeJucatori.Add(numeJ4TextField.Text);
+                    break;
+            }
+        }
 
         private void startBtn_Click(object sender, EventArgs e)
         {
@@ -94,6 +112,10 @@ namespace Proiect_AppUI
             }
 
             SeteazaNumeJucatori(joc);
+            SeteazaListaJucatori(joc);
+            joc.NumarJucatori = nrJucatoriTrckBr.Value;
+
+            new PioniPresenter(joc);
 
             joc.Closed += (s, args) => Close();
             joc.Show();

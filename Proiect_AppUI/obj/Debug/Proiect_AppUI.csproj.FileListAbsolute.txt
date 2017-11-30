@@ -10,3 +10,5 @@ c:\users\catalin\documents\visual studio 2015\Projects\Proiect_AppUI\Proiect_App
 c:\users\catalin\documents\visual studio 2015\Projects\Proiect_AppUI\Proiect_AppUI\obj\Debug\Proiect_AppUI.pdb
 c:\users\catalin\documents\visual studio 2015\Projects\Proiect_AppUI\Proiect_AppUI\bin\Debug\WindowsFormsControlLibrary1.dll
 c:\users\catalin\documents\visual studio 2015\Projects\Proiect_AppUI\Proiect_AppUI\bin\Debug\WindowsFormsControlLibrary1.pdb
+C:\Users\Catalin\Documents\Visual Studio 2015\Projects\Proiect_AppUI\Proiect_AppUI\bin\Debug\Constants.dll
+C:\Users\Catalin\Documents\Visual Studio 2015\Projects\Proiect_AppUI\Proiect_AppUI\bin\Debug\Constants.pdb

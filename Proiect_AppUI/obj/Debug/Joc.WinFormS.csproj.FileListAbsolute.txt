@@ -1,0 +1,14 @@
+C:\Users\Catalin\Documents\Visual Studio 2015\Projects\Proiect_AppUI\Proiect_AppUI\bin\Debug\Proiect_AppUI.exe.config
+C:\Users\Catalin\Documents\Visual Studio 2015\Projects\Proiect_AppUI\Proiect_AppUI\bin\Debug\Proiect_AppUI.exe
+C:\Users\Catalin\Documents\Visual Studio 2015\Projects\Proiect_AppUI\Proiect_AppUI\bin\Debug\Proiect_AppUI.pdb
+C:\Users\Catalin\Documents\Visual Studio 2015\Projects\Proiect_AppUI\Proiect_AppUI\bin\Debug\Constants.dll
+C:\Users\Catalin\Documents\Visual Studio 2015\Projects\Proiect_AppUI\Proiect_AppUI\bin\Debug\WindowsFormsControlLibrary1.dll
+C:\Users\Catalin\Documents\Visual Studio 2015\Projects\Proiect_AppUI\Proiect_AppUI\bin\Debug\Constants.pdb
+C:\Users\Catalin\Documents\Visual Studio 2015\Projects\Proiect_AppUI\Proiect_AppUI\bin\Debug\WindowsFormsControlLibrary1.pdb
+C:\Users\Catalin\Documents\Visual Studio 2015\Projects\Proiect_AppUI\Proiect_AppUI\obj\Debug\Proiect_AppUI.ConfigurareJocForm.resources
+C:\Users\Catalin\Documents\Visual Studio 2015\Projects\Proiect_AppUI\Proiect_AppUI\obj\Debug\Proiect_AppUI.JocForm.resources
+C:\Users\Catalin\Documents\Visual Studio 2015\Projects\Proiect_AppUI\Proiect_AppUI\obj\Debug\Proiect_AppUI.Properties.Resources.resources
+C:\Users\Catalin\Documents\Visual Studio 2015\Projects\Proiect_AppUI\Proiect_AppUI\obj\Debug\Joc.WinFormS.csproj.GenerateResource.Cache
+C:\Users\Catalin\Documents\Visual Studio 2015\Projects\Proiect_AppUI\Proiect_AppUI\obj\Debug\Proiect_AppUI.exe
+C:\Users\Catalin\Documents\Visual Studio 2015\Projects\Proiect_AppUI\Proiect_AppUI\obj\Debug\Proiect_AppUI.pdb
+C:\Users\Catalin\Documents\Visual Studio 2015\Projects\Proiect_AppUI\Proiect_AppUI\obj\Debug\Joc.WinFormS.csprojResolveAssemblyReference.cache

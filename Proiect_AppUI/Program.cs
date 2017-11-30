@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Proiect_AppUI.Presenter;
 
 namespace Proiect_AppUI
 {
@@ -16,6 +17,7 @@ namespace Proiect_AppUI
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+
             Application.Run(new ConfigurareJocForm());
         }
     }

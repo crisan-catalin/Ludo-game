@@ -1,12 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
+using Proiect_AppUI.Presenter;
 
 namespace Proiect_AppUI
 {
     public partial class JocForm : Form
     {
-        private List<Casuta.UserControl.Casuta> _casute;
+        public PioniPresenter Presenter { get; set; }
+        public List<Casuta.UserControl.Casuta> Casute { get; private set; }
+        public List<string> NumeJucatori { get; set; }
+        public int NumarJucatori { get; set; }
 
         public JocForm()
         {
@@ -16,38 +20,25 @@ namespace Proiect_AppUI
 
         private void InitializeazaCasutele()
         {
-            _casute = new List<Casuta.UserControl.Casuta>(72)
+            Casute = new List<Casuta.UserControl.Casuta>(72)
             {
-                casuta1,
-                casuta2,
-                casuta3,
-                casuta4,
-                casuta5,
-                casuta6,
-                casuta7,
-                casuta8,
-                casuta9,
-                casuta10,
-                casuta11,
-                casuta12,
-                casuta13,
-                casuta14,
-                casuta15,
-                casuta16,
-                casuta17,
-                casuta18,
-                casuta19,
-                casuta20,
-                casuta21,
-                casuta22,
-                casuta23,
-                casuta24,
-                casuta25,
-                casuta26,
-                casuta27,
-                casuta28,
-                casuta29,
-                casuta30,
+                acasaR1,
+                acasatR2,
+                acasaR3,
+                acasaR4,
+                acasaV1,
+                acasaV2,
+                acasaV3,
+                acasaV4,
+                acasaG1,
+                acasaG2,
+                acasaG3,
+                acasaG4,
+                acasaA2,
+                acasaA1,
+                acasaA3,
+                acasaA4,
+                startAlbastru,
                 casuta31,
                 casuta32,
                 casuta33,
@@ -57,61 +48,69 @@ namespace Proiect_AppUI
                 casuta37,
                 casuta38,
                 casuta39,
-                casuta40,
-                casuta41,
-                casuta42,
-                casuta43,
-                casuta44,
-                casuta45,
-                casuta46,
-                casuta47,
-                casuta48,
-                casuta49,
-                casuta50,
-                casuta51,
-                casuta52,
-                casuta53,
-                casuta54,
-                casuta55,
-                casuta56,
-                casuta57,
-                casuta58,
-                casuta59,
-                casuta60,
-                casuta61,
-                casuta62,
-                casuta63,
-                casuta64,
-                casuta65,
-                casuta66,
-                casuta67,
-                casuta68,
-                casuta69,
-                casuta70,
-                casuta71,
-                casuta72
+                startRosu,
+                casuta1,
+                casuta2,
+                casuta3,
+                casuta4,
+                casuta5,
+                casuta6,
+                casuta7,
+                casuta8,
+                casuta9,
+                startVerde,
+                casuta11,
+                casuta12,
+                casuta13,
+                casuta14,
+                casuta15,
+                casuta16,
+                casuta17,
+                casuta18,
+                casuta19,
+                startGalben,
+                casuta21,
+                casuta22,
+                casuta23,
+                casuta24,
+                casuta25,
+                casuta26,
+                casuta27,
+                casuta28,
+                casuta29,
+                finishA1,
+                finishA2,
+                finishA3,
+                finishA4,
+                finishG1,
+                finishG2,
+                finishG3,
+                finishG4,
+                finishV1,
+                finishV2,
+                finishV3,
+                finishV4,
+                finishR1,
+                finishR2,
+                finishR3,
+                finishR4
             };
-
         }
 
         private void casuta_Enter(object sender, EventArgs e)
         {
-
         }
 
         private void aruncaZarulBtn_Click(object sender, EventArgs e)
         {
-
         }
 
         private void terminaTuraBtn_Click(object sender, EventArgs e)
         {
-
         }
 
         private void casuta_Click(object sender, EventArgs e)
         {
-
         }
 
         private void JocForm_KeyDown(object sender, KeyEventArgs e)

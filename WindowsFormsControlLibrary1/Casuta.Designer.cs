@@ -43,7 +43,7 @@ namespace Casuta.UserControl
             // imaginePion
             // 
             this.imaginePion.BackColor = System.Drawing.Color.Transparent;
-            this.imaginePion.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.imaginePion.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.imaginePion.Dock = System.Windows.Forms.DockStyle.Fill;
             this.imaginePion.Location = new System.Drawing.Point(0, 0);
             this.imaginePion.Name = "imaginePion";

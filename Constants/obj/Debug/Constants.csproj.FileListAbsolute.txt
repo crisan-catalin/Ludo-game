@@ -1,0 +1,5 @@
+C:\Users\Catalin\Documents\Visual Studio 2015\Projects\Proiect_AppUI\Constants\bin\Debug\Constants.dll
+C:\Users\Catalin\Documents\Visual Studio 2015\Projects\Proiect_AppUI\Constants\bin\Debug\Constants.pdb
+C:\Users\Catalin\Documents\Visual Studio 2015\Projects\Proiect_AppUI\Constants\obj\Debug\Constants.csprojResolveAssemblyReference.cache
+C:\Users\Catalin\Documents\Visual Studio 2015\Projects\Proiect_AppUI\Constants\obj\Debug\Constants.dll
+C:\Users\Catalin\Documents\Visual Studio 2015\Projects\Proiect_AppUI\Constants\obj\Debug\Constants.pdb

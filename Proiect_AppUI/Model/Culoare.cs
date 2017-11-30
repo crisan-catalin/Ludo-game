@@ -1,4 +1,4 @@
-﻿namespace App.Model
+﻿namespace Proiect_AppUI.Model
 {
     public enum Culoare
     {

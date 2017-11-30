@@ -46,12 +46,39 @@
     <Compile Include="Jucator.cs" />
     <Compile Include="Pion.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Constants\Constants.csproj">
+      <Project>{1e99f3ee-3733-4253-a36b-4a915aacf8f6}</Project>
+      <Name>Constants</Name>
+    </ProjectReference>
     <ProjectReference Include="..\WindowsFormsControlLibrary1\Casuta.UserControl.csproj">
       <Project>{a44a2c18-5aea-468c-8f00-0cf514d7fb33}</Project>
       <Name>Casuta.UserControl</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pawn_blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pawn_green.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pawn_red.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pawn_yellow.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
