@@ -1,0 +1,223 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{442638AE-F25A-4502-A751-E07ABFDE7B05}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Proiect_AppUI</RootNamespace>
+    <AssemblyName>Proiect_AppUI</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ConfigurareJocForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConfigurareJocForm.Designer.cs">
+      <DependentUpon>ConfigurareJocForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JocForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JocForm.Designer.cs">
+      <DependentUpon>JocForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ConfigurareJocForm.resx">
+      <DependentUpon>ConfigurareJocForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JocForm.resx">
+      <DependentUpon>JocForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\board.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\board_real.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\crate_07.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\crate_08.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\crate_09.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\crate_10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\crate_17.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\crate_18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\crate_19.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\crate_20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\crate_27.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\crate_28.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\crate_29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\crate_30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\end_turn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\five.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\four.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\green.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\info.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\one.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pawn_blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pawn_green.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pawn_red.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pawn_yellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\red.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\roll.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\six.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\three.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tileGrass_roadCornerLL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tileGrass_roadCornerLR.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tileGrass_roadCornerUL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tileGrass_roadCornerUR.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tileGrass_roadEast.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tileGrass_roadNorth.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\two.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WindowsFormsControlLibrary1\Casuta.UserControl.csproj">
+      <Project>{A44A2C18-5AEA-468C-8F00-0CF514D7FB33}</Project>
+      <Name>Casuta.UserControl</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

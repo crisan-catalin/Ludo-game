@@ -1,0 +1,12 @@
+c:\users\catalin\documents\visual studio 2015\Projects\Proiect_AppUI\Proiect_AppUI\bin\Debug\Proiect_AppUI.exe.config
+c:\users\catalin\documents\visual studio 2015\Projects\Proiect_AppUI\Proiect_AppUI\bin\Debug\Proiect_AppUI.exe
+c:\users\catalin\documents\visual studio 2015\Projects\Proiect_AppUI\Proiect_AppUI\bin\Debug\Proiect_AppUI.pdb
+c:\users\catalin\documents\visual studio 2015\Projects\Proiect_AppUI\Proiect_AppUI\obj\Debug\Proiect_AppUI.csprojResolveAssemblyReference.cache
+c:\users\catalin\documents\visual studio 2015\Projects\Proiect_AppUI\Proiect_AppUI\obj\Debug\Proiect_AppUI.ConfigurareJocForm.resources
+c:\users\catalin\documents\visual studio 2015\Projects\Proiect_AppUI\Proiect_AppUI\obj\Debug\Proiect_AppUI.JocForm.resources
+c:\users\catalin\documents\visual studio 2015\Projects\Proiect_AppUI\Proiect_AppUI\obj\Debug\Proiect_AppUI.Properties.Resources.resources
+c:\users\catalin\documents\visual studio 2015\Projects\Proiect_AppUI\Proiect_AppUI\obj\Debug\Proiect_AppUI.csproj.GenerateResource.Cache
+c:\users\catalin\documents\visual studio 2015\Projects\Proiect_AppUI\Proiect_AppUI\obj\Debug\Proiect_AppUI.exe
+c:\users\catalin\documents\visual studio 2015\Projects\Proiect_AppUI\Proiect_AppUI\obj\Debug\Proiect_AppUI.pdb
+c:\users\catalin\documents\visual studio 2015\Projects\Proiect_AppUI\Proiect_AppUI\bin\Debug\WindowsFormsControlLibrary1.dll
+c:\users\catalin\documents\visual studio 2015\Projects\Proiect_AppUI\Proiect_AppUI\bin\Debug\WindowsFormsControlLibrary1.pdb
