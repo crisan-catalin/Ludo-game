@@ -52,10 +52,11 @@
     <Compile Include="ConfigurareJocForm.Designer.cs">
       <DependentUpon>ConfigurareJocForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="JocForm.cs">
+    <Compile Include="Model\Zar.cs" />
+    <Compile Include="View\JocForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="JocForm.Designer.cs">
+    <Compile Include="View\JocForm.Designer.cs">
       <DependentUpon>JocForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Model\Culoare.cs" />
@@ -67,7 +68,7 @@
     <EmbeddedResource Include="ConfigurareJocForm.resx">
       <DependentUpon>ConfigurareJocForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="JocForm.resx">
+    <EmbeddedResource Include="View\JocForm.resx">
       <DependentUpon>JocForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -220,9 +221,7 @@
       <Name>Casuta.UserControl</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="View\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

@@ -50,6 +50,7 @@ namespace Casuta.UserControl
             this.imaginePion.Size = new System.Drawing.Size(150, 150);
             this.imaginePion.TabIndex = 0;
             this.imaginePion.TabStop = false;
+            this.imaginePion.Click += new System.EventHandler(this.imaginePion_Click);
             // 
             // Casuta
             // 

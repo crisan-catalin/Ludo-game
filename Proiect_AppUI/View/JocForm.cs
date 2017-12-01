@@ -16,6 +16,7 @@ namespace Proiect_AppUI
         {
             InitializeComponent();
             InitializeazaCasutele();
+            AdaugaDelegatCasuta();
         }
 
         private void InitializeazaCasutele()
@@ -97,19 +98,30 @@ namespace Proiect_AppUI
             };
         }
 
+        private void AdaugaDelegatCasuta()
+        {
+            foreach (var casuta in Casute)
+            {
+                casuta.PionCliked += casuta_Enter;
+            }
+        }
+
         private void casuta_Enter(object sender, EventArgs e)
         {
+
+        }
+
+        private void casuta_Click(object sender, EventArgs e)
+        {
+            var x = sender as Casuta.UserControl.Casuta;
         }
 
         private void aruncaZarulBtn_Click(object sender, EventArgs e)
         {
+            aruncaZarulBtn.Enabled = false;
         }
 
         private void terminaTuraBtn_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void casuta_Click(object sender, EventArgs e)
         {
         }
 

@@ -812,6 +812,7 @@
             this.startRosu.TabIndex = 105;
             this.startRosu.Click += new System.EventHandler(this.casuta_Click);
             this.startRosu.Enter += new System.EventHandler(this.casuta_Enter);
+            this.startRosu.PionCliked += new System.EventHandler(this.casuta_Click);
             // 
             // casuta1
             // 
@@ -1767,10 +1768,10 @@
         public System.Windows.Forms.Label numeJRosuLbl;
         public System.Windows.Forms.Label numeJVerdeLbl;
         private System.Windows.Forms.TableLayoutPanel controalePanel;
-        private System.Windows.Forms.Button aruncaZarulBtn;
-        private System.Windows.Forms.Button terminaTuraBtn;
-        private System.Windows.Forms.PictureBox valoareZarPctrBox;
-        private System.Windows.Forms.PictureBox jucatorCurentPctrBox;
+        public System.Windows.Forms.Button aruncaZarulBtn;
+        public System.Windows.Forms.Button terminaTuraBtn;
+        public System.Windows.Forms.PictureBox valoareZarPctrBox;
+        public System.Windows.Forms.PictureBox jucatorCurentPctrBox;
         private Casuta.UserControl.Casuta acasaR1;
         private Casuta.UserControl.Casuta acasatR2;
         private Casuta.UserControl.Casuta acasaR3;
