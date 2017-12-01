@@ -102,8 +102,14 @@ namespace Proiect_AppUI
         {
             foreach (var casuta in Casute)
             {
-                casuta.PionCliked += casuta_Enter;
+                casuta.PionCliked += casuta_Click;
             }
+        }
+
+        private void casuta_Click(object sender, EventArgs e)
+        {
+            var x = sender as Casuta.UserControl.Casuta;
+            //Presenter.UserMoved();
         }
 
         private void casuta_Enter(object sender, EventArgs e)
@@ -111,18 +117,14 @@ namespace Proiect_AppUI
 
         }
 
-        private void casuta_Click(object sender, EventArgs e)
-        {
-            var x = sender as Casuta.UserControl.Casuta;
-        }
-
         private void aruncaZarulBtn_Click(object sender, EventArgs e)
         {
-            aruncaZarulBtn.Enabled = false;
+            Presenter.ZarAruncat();
         }
 
         private void terminaTuraBtn_Click(object sender, EventArgs e)
         {
+            Presenter.UrmatorulJucator();
         }
 
         private void JocForm_KeyDown(object sender, KeyEventArgs e)

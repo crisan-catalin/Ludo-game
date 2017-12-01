@@ -1,5 +1,6 @@
-﻿using System.Collections.Generic;
-using System.Drawing;
+﻿using System;
+using System.Collections.Generic;
+using System.Windows.Forms;
 using Proiect_AppUI.Model;
 using Proiect_AppUI.Properties;
 
@@ -15,6 +16,7 @@ namespace Proiect_AppUI.Presenter
 
         private int _randJucator;
         private int _valoareZar;
+        private bool _aFacutMutarea;
 
         public PioniPresenter(JocForm view)
         {
@@ -40,34 +42,40 @@ namespace Proiect_AppUI.Presenter
         {
             _randJucator = 0;
             _valoareZar = 0;
+            _aFacutMutarea = false;
         }
 
         public void ZarAruncat()
         {
+            if (_view.aruncaZarulBtn.Enabled && _valoareZar == 6 && !_aFacutMutarea)
+                //Mesaj
+                return;
+
             _valoareZar = _zar.AruncaZar;
+            Console.WriteLine($"Valoare zar: {_valoareZar}");
 
             switch (_valoareZar)
             {
                 case 1:
-                    _view.valoareZarPctrBox.Image = Resources.one;
+                    _view.valoareZarPctrBox.BackgroundImage = Resources.one;
                     break;
                 case 2:
-                    _view.valoareZarPctrBox.Image = Resources.two;
+                    _view.valoareZarPctrBox.BackgroundImage = Resources.two;
                     break;
                 case 3:
-                    _view.valoareZarPctrBox.Image = Resources.three;
+                    _view.valoareZarPctrBox.BackgroundImage = Resources.three;
                     break;
                 case 4:
-                    _view.valoareZarPctrBox.Image = Resources.four;
+                    _view.valoareZarPctrBox.BackgroundImage = Resources.four;
                     break;
                 case 5:
-                    _view.valoareZarPctrBox.Image = Resources.five;
+                    _view.valoareZarPctrBox.BackgroundImage = Resources.five;
                     break;
                 case 6:
-                    _view.valoareZarPctrBox.Image = Resources.six;
+                    _view.valoareZarPctrBox.BackgroundImage = Resources.six;
                     break;
                 default:
-                    _view.valoareZarPctrBox.Image = Resources.info;
+                    _view.valoareZarPctrBox.BackgroundImage = Resources.info;
                     break;
             }
 
@@ -75,7 +83,7 @@ namespace Proiect_AppUI.Presenter
             {
                 _view.aruncaZarulBtn.Enabled = false;
                 _view.terminaTuraBtn.Enabled = true;
-                UrmatorulJucator();
+                _aFacutMutarea = true;
             }
         }
 
@@ -83,23 +91,25 @@ namespace Proiect_AppUI.Presenter
         {
             _randJucator++;
             _randJucator %= _view.NumarJucatori;
+            Console.WriteLine($"Jucatorul {_randJucator}");
 
             _view.aruncaZarulBtn.Enabled = true;
             _view.terminaTuraBtn.Enabled = false;
+            _aFacutMutarea = false;
 
             switch (_randJucator)
             {
                 case 0:
-                    _view.jucatorCurentPctrBox.Image = Resources.red;
+                    _view.jucatorCurentPctrBox.BackgroundImage = Resources.red;
                     break;
                 case 1:
-                    _view.jucatorCurentPctrBox.Image = Resources.green;
+                    _view.jucatorCurentPctrBox.BackgroundImage = Resources.green;
                     break;
                 case 2:
-                    _view.jucatorCurentPctrBox.Image = Resources.blue;
+                    _view.jucatorCurentPctrBox.BackgroundImage = Resources.blue;
                     break;
                 case 3:
-                    _view.jucatorCurentPctrBox.Image = Resources.yellow;
+                    _view.jucatorCurentPctrBox.BackgroundImage = Resources.yellow;
                     break;
             }
         }
