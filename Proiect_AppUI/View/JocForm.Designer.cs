@@ -812,7 +812,6 @@
             this.startRosu.TabIndex = 105;
             this.startRosu.Click += new System.EventHandler(this.casuta_Click);
             this.startRosu.Enter += new System.EventHandler(this.casuta_Enter);
-            this.startRosu.PionCliked += new System.EventHandler(this.casuta_Click);
             // 
             // casuta1
             // 

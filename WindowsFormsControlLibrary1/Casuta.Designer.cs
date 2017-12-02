@@ -51,6 +51,7 @@ namespace Casuta.UserControl
             this.imaginePion.TabIndex = 0;
             this.imaginePion.TabStop = false;
             this.imaginePion.Click += new System.EventHandler(this.imaginePion_Click);
+            this.imaginePion.MouseEnter += new System.EventHandler(this.imaginePion_MouseEnter);
             // 
             // Casuta
             // 

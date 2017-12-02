@@ -10,6 +10,7 @@ namespace Casuta.UserControl
         public int PozitieAlbastru { get; set; }
         public int PozitieGalben { get; set; }
         public event EventHandler PionCliked;
+        public event EventHandler PionMouseEnter;
 
         public Casuta()
         {
@@ -21,9 +22,19 @@ namespace Casuta.UserControl
             PionCliked?.Invoke(this, e);
         }
 
+        protected virtual void OnPionMouseEnter(EventArgs e)
+        {
+            PionMouseEnter?.Invoke(this, e);
+        }
+
         private void imaginePion_Click(object sender, EventArgs e)
         {
             OnPionClicked(e);
+        }
+
+        private void imaginePion_MouseEnter(object sender, EventArgs e)
+        {
+            OnPionMouseEnter(e);
         }
     }
 }

@@ -103,6 +103,7 @@ namespace Proiect_AppUI
             foreach (var casuta in Casute)
             {
                 casuta.PionCliked += casuta_Click;
+                casuta.PionMouseEnter += casuta_Enter;
             }
         }
 
