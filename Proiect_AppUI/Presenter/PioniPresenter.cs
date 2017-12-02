@@ -47,6 +47,9 @@ namespace Proiect_AppUI.Presenter
 
         public void IncearcaSaMutiPionDin(Casuta.UserControl.Casuta casuta)
         {
+            if (!casuta.EsteOcupata)
+                return;
+
             if (_aFacutMutarea)
             {
                 //Mesaj
@@ -54,6 +57,13 @@ namespace Proiect_AppUI.Presenter
                 return;
             }
             var pion = GetPionDinCasuta(casuta);
+
+            if (pion == null)
+            {
+                MessageBox.Show("Nu ai pion in acea casuta");
+                return;
+            }
+
             var umatoareaPozitie = GetUrmatoareaPozitiePion(pion);
 
             //Nu a dat 6 ca sa iasa
