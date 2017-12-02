@@ -262,6 +262,8 @@ namespace Proiect_AppUI.Presenter
 
         public void UrmatorulJucator()
         {
+            _view.valoareZarPctrBox.BackgroundImage = Resources.info;
+
             _randJucator++;
             _randJucator %= _view.NumarJucatori;
             Console.WriteLine($"Jucatorul {_randJucator}");
