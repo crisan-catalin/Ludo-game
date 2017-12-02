@@ -11,9 +11,7 @@ namespace Constants
         public const int NumarPioni = 4;
         public const int PozitieAcasa = -6;
         public const int ValoareMagicaZar = 6;
-        public const string CaleImaginePionRosu = "";
-        public const string CaleImaginePionVerde = "";
-        public const string CaleImaginePionAlbastru = "";
-        public const string CaleImaginePionGalben = "";
+        public const int UltimaPozitie = 43;
+        public const int SumaFinalaPozitiiPioni = 166;
     }
 }
