@@ -45,10 +45,50 @@ namespace Proiect_AppUI.Presenter
             _aFacutMutarea = false;
         }
 
+        public void IncearcaSaDemarcheziUrmatoareaPozitie(Casuta.UserControl.Casuta casuta)
+        {
+            casuta.ImaginePion.Image = null;
+        }
+
+        public void IncearcaSaMarcheziUrmatoareaPozitie(Casuta.UserControl.Casuta casuta)
+        {
+            if (!casuta.EsteOcupata || _view.valoareZarPctrBox.BackgroundImage == Resources.info)
+                return;
+
+            var pion = GetPionDinCasuta(casuta);
+            if (pion == null)
+            {
+                return;
+            }
+
+            var umatoareaPozitie = GetUrmatoareaPozitiePion(pion);
+            if (umatoareaPozitie < 0 || umatoareaPozitie > Constants.Constants.UltimaPozitie)
+                return;
+
+            var casutaUrmatoarePozitie = GetCasutaDePePozitia(umatoareaPozitie);
+            if (casutaUrmatoarePozitie.EsteOcupata)
+            {
+                var pionUrmatoareaPozitie = GetPionDinCasuta(casuta);
+                if (pion.Imagine.Equals(pionUrmatoareaPozitie.Imagine))
+                {
+                    //In acea casuta este un pion de-al tau
+                    return;
+                }
+            }
+
+            casutaUrmatoarePozitie.ImaginePion.Image = Resources.x;
+        }
+
         public void IncearcaSaMutiPionDin(Casuta.UserControl.Casuta casuta)
         {
             if (!casuta.EsteOcupata)
                 return;
+
+            //wrong
+            if (_view.aruncaZarulBtn.Enabled)
+            {
+                _aFacutMutarea = false;
+            }
 
             if (_aFacutMutarea)
             {
@@ -57,7 +97,6 @@ namespace Proiect_AppUI.Presenter
                 return;
             }
             var pion = GetPionDinCasuta(casuta);
-
             if (pion == null)
             {
                 MessageBox.Show("Nu ai pion in acea casuta");
@@ -73,9 +112,17 @@ namespace Proiect_AppUI.Presenter
                 return;
             }
 
+            if (umatoareaPozitie > Constants.Constants.UltimaPozitie)
+            {
+                MessageBox.Show("Nu mai poti muta pionul");
+                return;
+            }
+
             var casutaUrmatoarePozitie = GetCasutaDePePozitia(umatoareaPozitie);
+            IncearcaSaDemarcheziUrmatoareaPozitie(casuta);
             IncearcaSaMutiPionIn(casutaUrmatoarePozitie, pion);
 
+            //wrong
             if (_valoareZar != Constants.Constants.ValoareMagicaZar)
                 _aFacutMutarea = true;
         }
@@ -85,11 +132,9 @@ namespace Proiect_AppUI.Presenter
             if (casuta.EsteOcupata)
             {
                 var pionUrmatoareaPozitie = GetPionDinCasuta(casuta);
-
-                //verifica daca este corecta verificarea
+                
                 if (pion.Imagine.Equals(pionUrmatoareaPozitie.Imagine))
                 {
-                    //Mesaj: in acea casuta este un pion de-al tau
                     MessageBox.Show("In acea casuta este un pion de-al tau");
                     return;
                 }
@@ -114,20 +159,26 @@ namespace Proiect_AppUI.Presenter
             pion.CasutaCurenta.EsteOcupata = true;
             pion.PozitiaCurenta = pozitieCasuta;
             casuta.ImaginePion.BackgroundImage = pion.Imagine;
+            _aFacutMutarea = true;
         }
 
         private void MutaPionInCasa(Pion pion)
         {
             //verifica daca s-a schimbat imaginea la casuta
             pion.CasutaCurenta = pion.Acasa;
+            pion.CasutaCurenta.EsteOcupata = true;
+            pion.CasutaCurenta.ImaginePion.BackgroundImage = pion.Imagine;
         }
 
         private Pion GetPionDinCasuta(Casuta.UserControl.Casuta casuta)
         {
-            foreach (var pion in _jucatori[_randJucator].Pioni)
+            foreach (var jucator in _jucatori)
             {
-                if (pion.CasutaCurenta.Equals(casuta))
-                    return pion;
+                foreach (var pion in jucator.Pioni)
+                {
+                    if (pion.CasutaCurenta.Equals(casuta))
+                        return pion;
+                }
             }
             //throw new PionNotFound;
             return null;
@@ -221,9 +272,12 @@ namespace Proiect_AppUI.Presenter
 
         public void ZarAruncat()
         {
-            if (_view.aruncaZarulBtn.Enabled && _valoareZar == Constants.Constants.ValoareMagicaZar && !_aFacutMutarea)
-                //Mesaj
-                return;
+//            Add method to check if player has at least one possible move
+//            if (_view.aruncaZarulBtn.Enabled && _valoareZar == Constants.Constants.ValoareMagicaZar && !_aFacutMutarea)
+//            {
+//                MessageBox.Show("Muta mai intai pionul");
+//                return;
+//            }
 
             _valoareZar = _zar.AruncaZar;
             Console.WriteLine($"Valoare zar: {_valoareZar}");

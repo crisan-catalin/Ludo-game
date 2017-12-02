@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Security.Policy;
 using System.Windows.Forms;
 using Proiect_AppUI.Presenter;
 
@@ -181,17 +182,35 @@ namespace Proiect_AppUI
             {
                 casuta.PionCliked += casuta_Click;
                 casuta.PionMouseEnter += casuta_Enter;
+                casuta.PionMouseLeave += casuta_Leave;
             }
         }
 
         private void casuta_Click(object sender, EventArgs e)
         {
             var casutaSelectata = sender as Casuta.UserControl.Casuta;
-            Presenter.IncearcaSaMutiPionDin(casutaSelectata);
+            if (casutaSelectata != null)
+            {
+                Presenter.IncearcaSaMutiPionDin(casutaSelectata);
+            }
         }
 
         private void casuta_Enter(object sender, EventArgs e)
         {
+            var casutaSelectata = sender as Casuta.UserControl.Casuta;
+            if (casutaSelectata != null)
+            {
+                Presenter.IncearcaSaMarcheziUrmatoareaPozitie(casutaSelectata);
+            }
+        }
+
+        private void casuta_Leave(object sender, EventArgs e)
+        {
+            var casutaSelectata = sender as Casuta.UserControl.Casuta;
+            if (casutaSelectata != null)
+            {
+                Presenter.IncearcaSaDemarcheziUrmatoareaPozitie(casutaSelectata);
+            }
         }
 
         private void aruncaZarulBtn_Click(object sender, EventArgs e)

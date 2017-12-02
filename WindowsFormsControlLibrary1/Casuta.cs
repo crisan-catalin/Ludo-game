@@ -11,6 +11,7 @@ namespace Casuta.UserControl
         public int PozitieGalben { get; private set; }
         public event EventHandler PionCliked;
         public event EventHandler PionMouseEnter;
+        public event EventHandler PionMouseLeave;
 
         public Casuta()
         {
@@ -35,6 +36,11 @@ namespace Casuta.UserControl
             PionMouseEnter?.Invoke(this, e);
         }
 
+        protected virtual void OnPionMouseLeave(EventArgs e)
+        {
+            PionMouseLeave?.Invoke(this,e);
+        }
+
         private void imaginePion_Click(object sender, EventArgs e)
         {
             OnPionClicked(e);
@@ -43,6 +49,11 @@ namespace Casuta.UserControl
         private void imaginePion_MouseEnter(object sender, EventArgs e)
         {
             OnPionMouseEnter(e);
+        }
+
+        private void imaginePion_MouseLeave(object sender, EventArgs e)
+        {
+            OnPionMouseLeave(e);
         }
     }
 }

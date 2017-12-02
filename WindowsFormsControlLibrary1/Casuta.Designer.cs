@@ -48,10 +48,12 @@ namespace Casuta.UserControl
             this.imaginePion.Location = new System.Drawing.Point(0, 0);
             this.imaginePion.Name = "imaginePion";
             this.imaginePion.Size = new System.Drawing.Size(150, 150);
+            this.imaginePion.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.imaginePion.TabIndex = 0;
             this.imaginePion.TabStop = false;
             this.imaginePion.Click += new System.EventHandler(this.imaginePion_Click);
             this.imaginePion.MouseEnter += new System.EventHandler(this.imaginePion_MouseEnter);
+            this.imaginePion.MouseLeave += new System.EventHandler(this.imaginePion_MouseLeave);
             // 
             // Casuta
             // 
