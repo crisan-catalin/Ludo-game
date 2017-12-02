@@ -28,7 +28,7 @@ namespace Proiect_AppUI.Model
 
             for (int i = 0; i < Constants.Constants.NumarPioni; i++)
             {
-                Pioni.Add(new Pion(i, imaginePion, Constants.Constants.PozitieStart, CasuteStart[i]));
+                Pioni.Add(new Pion(i, imaginePion, Constants.Constants.PozitieAcasa, CasuteStart[i]));
             }
         }
 

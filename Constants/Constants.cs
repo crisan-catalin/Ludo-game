@@ -9,7 +9,8 @@ namespace Constants
     public static class Constants
     {
         public const int NumarPioni = 4;
-        public const int PozitieStart = -6;
+        public const int PozitieAcasa = -6;
+        public const int ValoareMagicaZar = 6;
         public const string CaleImaginePionRosu = "";
         public const string CaleImaginePionVerde = "";
         public const string CaleImaginePionAlbastru = "";
