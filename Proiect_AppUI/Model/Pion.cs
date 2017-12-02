@@ -18,6 +18,7 @@ namespace Proiect_AppUI.Model
             Acasa = acasa;
             CasutaCurenta = acasa;
             CasutaCurenta.ImaginePion.BackgroundImage = imagine;
+            CasutaCurenta.EsteOcupata = true;
         }
     }
 }
