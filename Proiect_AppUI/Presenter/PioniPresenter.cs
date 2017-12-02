@@ -88,7 +88,6 @@ namespace Proiect_AppUI.Presenter
             }
 
             MutaPionInCasuta(pion, casuta, GetUrmatoareaPozitiePion(pion));
-
         }
 
         private void ElibereazaCasuta(Casuta.UserControl.Casuta casuta)
@@ -283,19 +282,10 @@ namespace Proiect_AppUI.Presenter
             return _view.NumeJucatori[index];
         }
 
-        //Remove mockup from method
         private List<Casuta.UserControl.Casuta> GetCasuteStartPentru(Culoare culoareJucator)
         {
             List<Casuta.UserControl.Casuta> casuteStart =
                 new List<Casuta.UserControl.Casuta>(Constants.Constants.NumarPioni);
-
-            //delete mock data
-            casuteStart.Add(_view.Casute[0]);
-            casuteStart.Add(_view.Casute[1]);
-            casuteStart.Add(_view.Casute[2]);
-            casuteStart.Add(_view.Casute[3]);
-            return casuteStart;
-            //
 
             switch (culoareJucator)
             {
