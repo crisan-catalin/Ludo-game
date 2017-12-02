@@ -9,7 +9,7 @@ namespace Proiect_AppUI.Presenter
     public class PioniPresenter
     {
         private List<Jucator> _jucatori;
-        private Zar _zar;
+        private readonly Zar _zar;
 
         //private IJocView view k instead of JocForm
         private readonly JocForm _view;
@@ -45,9 +45,174 @@ namespace Proiect_AppUI.Presenter
             _aFacutMutarea = false;
         }
 
+        public void IncearcaSaMutiPionDin(Casuta.UserControl.Casuta casuta)
+        {
+            if (_aFacutMutarea)
+            {
+                //Mesaj
+                MessageBox.Show("Ai mutat deja");
+                return;
+            }
+            var pion = GetPionDinCasuta(casuta);
+            var umatoareaPozitie = GetUrmatoareaPozitiePion(pion);
+
+            //Nu a dat 6 ca sa iasa
+            if (umatoareaPozitie < 0)
+            {
+                MessageBox.Show("Trebuie sa dai 6 sa iesi");
+                return;
+            }
+
+            var casutaUrmatoarePozitie = GetCasutaDePePozitia(umatoareaPozitie);
+            IncearcaSaMutiPionIn(casutaUrmatoarePozitie, pion);
+
+            if (_valoareZar != Constants.Constants.ValoareMagicaZar)
+                _aFacutMutarea = true;
+        }
+
+        private void IncearcaSaMutiPionIn(Casuta.UserControl.Casuta casuta, Pion pion)
+        {
+            if (casuta.EsteOcupata)
+            {
+                var pionUrmatoareaPozitie = GetPionDinCasuta(casuta);
+
+                //verifica daca este corecta verificarea
+                if (pion.Imagine.Equals(pionUrmatoareaPozitie.Imagine))
+                {
+                    //Mesaj: in acea casuta este un pion de-al tau
+                    MessageBox.Show("In acea casuta este un pion de-al tau");
+                    return;
+                }
+
+                MutaPionInCasa(pionUrmatoareaPozitie);
+            }
+
+            MutaPionInCasuta(pion, casuta, GetUrmatoareaPozitiePion(pion));
+
+        }
+
+        private void ElibereazaCasuta(Casuta.UserControl.Casuta casuta)
+        {
+            casuta.ImaginePion.BackgroundImage = null;
+            casuta.EsteOcupata = false;
+        }
+
+        private void MutaPionInCasuta(Pion pion, Casuta.UserControl.Casuta casuta, int pozitieCasuta)
+        {
+            ElibereazaCasuta(pion.CasutaCurenta);
+
+            pion.CasutaCurenta = casuta;
+            pion.CasutaCurenta.EsteOcupata = true;
+            pion.PozitiaCurenta = pozitieCasuta;
+            casuta.ImaginePion.BackgroundImage = pion.Imagine;
+        }
+
+        private void MutaPionInCasa(Pion pion)
+        {
+            //verifica daca s-a schimbat imaginea la casuta
+            pion.CasutaCurenta = pion.Acasa;
+        }
+
+        private Pion GetPionDinCasuta(Casuta.UserControl.Casuta casuta)
+        {
+            foreach (var pion in _jucatori[_randJucator].Pioni)
+            {
+                if (pion.CasutaCurenta.Equals(casuta))
+                    return pion;
+            }
+            //throw new PionNotFound;
+            return null;
+        }
+
+        private Casuta.UserControl.Casuta GetCasutaDePePozitia(int pozitie)
+        {
+            switch (_randJucator)
+            {
+                case 0:
+                    return GetCasutaJucatorRosuDePePozitia(pozitie);
+                case 1:
+                    return GetCasutaJucatorVerdeDePePozitia(pozitie);
+                case 2:
+                    return GetCasutaJucatorAlbastruDePePozitia(pozitie);
+                case 3:
+                    return GetCasutaJucatorGalbenDePePozitia(pozitie);
+            }
+            //throw new InvalidJucator;
+            return null;
+        }
+
+        private Casuta.UserControl.Casuta GetCasutaJucatorRosuDePePozitia(int pozitie)
+        {
+            foreach (var casuta in _view.Casute)
+            {
+                if (casuta.PozitieRosu == pozitie)
+                    return casuta;
+            }
+            //throw new PozitieCasutaInvalida;
+            return null;
+        }
+
+        private Casuta.UserControl.Casuta GetCasutaJucatorVerdeDePePozitia(int pozitie)
+        {
+            foreach (var casuta in _view.Casute)
+            {
+                if (casuta.PozitieVerde == pozitie)
+                    return casuta;
+            }
+            //throw new PozitieCasutaInvalida;
+            return null;
+        }
+
+        private Casuta.UserControl.Casuta GetCasutaJucatorAlbastruDePePozitia(int pozitie)
+        {
+            foreach (var casuta in _view.Casute)
+            {
+                if (casuta.PozitieAlbastru == pozitie)
+                    return casuta;
+            }
+            //throw new PozitieCasutaInvalida;
+            return null;
+        }
+
+        private Casuta.UserControl.Casuta GetCasutaJucatorGalbenDePePozitia(int pozitie)
+        {
+            foreach (var casuta in _view.Casute)
+            {
+                if (casuta.PozitieGalben == pozitie)
+                    return casuta;
+            }
+            //throw new PozitieCasutaInvalida;
+            return null;
+        }
+
+        private int GetPozitieCurentaPion(Pion pion)
+        {
+            switch (_randJucator)
+            {
+                case 0:
+                    return pion.CasutaCurenta.PozitieRosu;
+
+                case 1:
+                    return pion.CasutaCurenta.PozitieVerde;
+
+                case 2:
+                    return pion.CasutaCurenta.PozitieAlbastru;
+
+                case 3:
+                    return pion.CasutaCurenta.PozitieGalben;
+            }
+            //throw new InvalidRandJucator;
+            return 0;
+        }
+
+        private int GetUrmatoareaPozitiePion(Pion pion)
+        {
+            return GetPozitieCurentaPion(pion) + _valoareZar;
+        }
+
         public void ZarAruncat()
         {
-            if (_view.aruncaZarulBtn.Enabled && _valoareZar == 6 && !_aFacutMutarea)
+            if (_view.aruncaZarulBtn.Enabled && _valoareZar == Constants.Constants.ValoareMagicaZar && !_aFacutMutarea)
                 //Mesaj
                 return;
 
@@ -79,11 +244,10 @@ namespace Proiect_AppUI.Presenter
                     break;
             }
 
-            if (_valoareZar != 6)
+            if (_valoareZar != Constants.Constants.ValoareMagicaZar)
             {
                 _view.aruncaZarulBtn.Enabled = false;
                 _view.terminaTuraBtn.Enabled = true;
-                _aFacutMutarea = true;
             }
         }
 
@@ -138,7 +302,7 @@ namespace Proiect_AppUI.Presenter
                 case Culoare.Rosu:
                     foreach (var casuta in _view.Casute)
                     {
-                        if (casuta.PozitieRosu == Constants.Constants.PozitieStart && !casuteStart.Contains(casuta))
+                        if (casuta.PozitieRosu == Constants.Constants.PozitieAcasa && !casuteStart.Contains(casuta))
                             casuteStart.Add(casuta);
                         if (casuteStart.Count == Constants.Constants.NumarPioni)
                             return casuteStart;
@@ -148,7 +312,7 @@ namespace Proiect_AppUI.Presenter
                 case Culoare.Verde:
                     foreach (var casuta in _view.Casute)
                     {
-                        if (casuta.PozitieVerde == Constants.Constants.PozitieStart && !casuteStart.Contains(casuta))
+                        if (casuta.PozitieVerde == Constants.Constants.PozitieAcasa && !casuteStart.Contains(casuta))
                             casuteStart.Add(casuta);
                         if (casuteStart.Count == Constants.Constants.NumarPioni)
                             return casuteStart;
@@ -158,7 +322,7 @@ namespace Proiect_AppUI.Presenter
                 case Culoare.Albastru:
                     foreach (var casuta in _view.Casute)
                     {
-                        if (casuta.PozitieAlbastru == Constants.Constants.PozitieStart && !casuteStart.Contains(casuta))
+                        if (casuta.PozitieAlbastru == Constants.Constants.PozitieAcasa && !casuteStart.Contains(casuta))
                             casuteStart.Add(casuta);
                         if (casuteStart.Count == Constants.Constants.NumarPioni)
                             return casuteStart;
@@ -168,7 +332,7 @@ namespace Proiect_AppUI.Presenter
                 case Culoare.Galben:
                     foreach (var casuta in _view.Casute)
                     {
-                        if (casuta.PozitieGalben == Constants.Constants.PozitieStart && !casuteStart.Contains(casuta))
+                        if (casuta.PozitieGalben == Constants.Constants.PozitieAcasa && !casuteStart.Contains(casuta))
                             casuteStart.Add(casuta);
                         if (casuteStart.Count == Constants.Constants.NumarPioni)
                             return casuteStart;
