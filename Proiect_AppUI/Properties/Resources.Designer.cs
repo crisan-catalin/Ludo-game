@@ -97,21 +97,20 @@ namespace Proiect_AppUI.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        ///   Looks up a localized string similar to Atentie.
         /// </summary>
-        internal static System.Drawing.Bitmap blue {
+        internal static string atentie_text {
             get {
-                object obj = ResourceManager.GetObject("blue", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
+                return ResourceManager.GetString("atentie_text", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap board {
+        internal static System.Drawing.Bitmap blue {
             get {
-                object obj = ResourceManager.GetObject("board", resourceCulture);
+                object obj = ResourceManager.GetObject("blue", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -252,6 +251,16 @@ namespace Proiect_AppUI.Properties {
         internal static System.Drawing.Bitmap end_turn {
             get {
                 object obj = ResourceManager.GetObject("end_turn", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap end_turn_disabled {
+            get {
+                object obj = ResourceManager.GetObject("end_turn_disabled", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -417,6 +426,16 @@ namespace Proiect_AppUI.Properties {
         internal static System.Drawing.Bitmap roll {
             get {
                 object obj = ResourceManager.GetObject("roll", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap roll_disabled {
+            get {
+                object obj = ResourceManager.GetObject("roll_disabled", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

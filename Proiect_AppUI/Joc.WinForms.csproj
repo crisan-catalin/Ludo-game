@@ -98,9 +98,6 @@
     <None Include="Resources\blue.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\board.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\board_real.jpg" />
   </ItemGroup>
   <ItemGroup>
@@ -221,7 +218,12 @@
       <Name>Casuta.UserControl</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\end_turn_disabled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\roll_disabled.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

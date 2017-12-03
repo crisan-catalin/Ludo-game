@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.Windows.Forms;
 using Proiect_AppUI.Presenter;
+using Proiect_AppUI.Properties;
 
 namespace Proiect_AppUI
 {
@@ -38,18 +39,38 @@ namespace Proiect_AppUI
             set { numeJGalbenLbl.Text = value; }
         }
 
-        //Add image gray/color
         public bool AruncaZarulActivat
         {
             get { return aruncaZarulBtn.Enabled; }
-            set { aruncaZarulBtn.Enabled = value; }
+            set
+            {
+                aruncaZarulBtn.Enabled = value;
+                if (value)
+                {
+                    aruncaZarulBtn.BackgroundImage = Resources.roll;
+                }
+                else
+                {
+                    aruncaZarulBtn.BackgroundImage = Resources.roll_disabled;
+                }
+            }
         }
 
-        //Add image gray/color
         public bool TerminaTuraActivat
         {
             get { return terminaTuraBtn.Enabled; }
-            set { terminaTuraBtn.Enabled = value; }
+            set
+            {
+                terminaTuraBtn.Enabled = value;
+                if (value)
+                {
+                    terminaTuraBtn.BackgroundImage = Resources.end_turn;
+                }
+                else
+                {
+                    terminaTuraBtn.BackgroundImage = Resources.end_turn_disabled;
+                }
+            }
         }
 
         public Image ImagineValoareZar

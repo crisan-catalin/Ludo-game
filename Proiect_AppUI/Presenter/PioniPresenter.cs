@@ -42,6 +42,7 @@ namespace Proiect_AppUI.Presenter
             _randJucator = 0;
             _valoareZar = 0;
             _aFacutMutarea = false;
+            _view.TerminaTuraActivat = false;
         }
 
         public void IncearcaSaDemarcheziUrmatoareaPozitie(Casuta.UserControl.Casuta casuta)
@@ -90,13 +91,13 @@ namespace Proiect_AppUI.Presenter
 
             if (_aFacutMutarea)
             {
-                MessageBox.Show(Resources.ai_mutat_deja_text);
+                MessageBox.Show(Resources.ai_mutat_deja_text, Resources.atentie_text);
                 return;
             }
             var pion = GetPionDinCasuta(casuta);
             if (pion == null || !_jucatori[_randJucator].Pioni.Contains(pion))
             {
-                MessageBox.Show(Resources.nu_ai_pion_in_acea_casuta_text);
+                MessageBox.Show(Resources.nu_ai_pion_in_acea_casuta_text, Resources.atentie_text);
                 return;
             }
 
@@ -105,13 +106,13 @@ namespace Proiect_AppUI.Presenter
             //Nu a dat 6 ca sa iasa
             if (umatoareaPozitie < 0)
             {
-                MessageBox.Show(Resources.arunca_6_sa_iesi_text);
+                MessageBox.Show(Resources.arunca_6_sa_iesi_text, Resources.atentie_text);
                 return;
             }
 
             if (umatoareaPozitie > Constants.Constants.UltimaPozitie)
             {
-                MessageBox.Show(Resources.nu_mai_ai_unde_muta_pionul_text);
+                MessageBox.Show(Resources.nu_mai_ai_unde_muta_pionul_text, Resources.atentie_text);
                 return;
             }
 
@@ -159,7 +160,7 @@ namespace Proiect_AppUI.Presenter
 
                 if (pion.Imagine.Equals(pionUrmatoareaPozitie.Imagine))
                 {
-                    MessageBox.Show(Resources.ai_deja_pion_in_acea_casuta_text);
+                    MessageBox.Show(Resources.ai_deja_pion_in_acea_casuta_text, Resources.atentie_text);
                     return;
                 }
 
