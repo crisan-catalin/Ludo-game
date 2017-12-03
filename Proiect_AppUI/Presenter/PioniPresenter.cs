@@ -84,14 +84,9 @@ namespace Proiect_AppUI.Presenter
             if (casutaUrmatoarePozitie.EsteOcupata)
             {
                 var pionUrmatoareaPozitie = GetPionDinCasuta(casutaUrmatoarePozitie);
-//                foreach (var pion1 in _jucatori[_randJucator].Pioni)
-//                {
-//                    if (pion1 == pionUrmatoareaPozitie)
-//                        return;
-//                }
-                if(_jucatori[_randJucator].Pioni.Contains(pionUrmatoareaPozitie))
+                //In acea casuta este un pion de-al tau
+                if (_jucatori[_randJucator].Pioni.Contains(pionUrmatoareaPozitie))
                 {
-                    //In acea casuta este un pion de-al tau
                     return;
                 }
             }
