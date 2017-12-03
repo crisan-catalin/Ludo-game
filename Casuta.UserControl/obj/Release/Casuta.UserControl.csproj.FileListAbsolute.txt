@@ -1,0 +1,7 @@
+C:\Users\Catalin\Documents\Visual Studio 2015\Projects\Proiect_AppUI\WindowsFormsControlLibrary1\bin\Release\WindowsFormsControlLibrary1.dll
+C:\Users\Catalin\Documents\Visual Studio 2015\Projects\Proiect_AppUI\WindowsFormsControlLibrary1\bin\Release\WindowsFormsControlLibrary1.pdb
+C:\Users\Catalin\Documents\Visual Studio 2015\Projects\Proiect_AppUI\WindowsFormsControlLibrary1\obj\Release\Casuta.UserControl.Casuta.resources
+C:\Users\Catalin\Documents\Visual Studio 2015\Projects\Proiect_AppUI\WindowsFormsControlLibrary1\obj\Release\WindowsFormsControlLibrary1.Properties.Resources.resources
+C:\Users\Catalin\Documents\Visual Studio 2015\Projects\Proiect_AppUI\WindowsFormsControlLibrary1\obj\Release\Casuta.UserControl.csproj.GenerateResource.Cache
+C:\Users\Catalin\Documents\Visual Studio 2015\Projects\Proiect_AppUI\WindowsFormsControlLibrary1\obj\Release\WindowsFormsControlLibrary1.dll
+C:\Users\Catalin\Documents\Visual Studio 2015\Projects\Proiect_AppUI\WindowsFormsControlLibrary1\obj\Release\WindowsFormsControlLibrary1.pdb

@@ -1,7 +1,0 @@
-c:\users\catalin\documents\visual studio 2015\Projects\Proiect_AppUI\App.Model\bin\Debug\App.Model.dll
-c:\users\catalin\documents\visual studio 2015\Projects\Proiect_AppUI\App.Model\bin\Debug\App.Model.pdb
-c:\users\catalin\documents\visual studio 2015\Projects\Proiect_AppUI\App.Model\bin\Debug\WindowsFormsControlLibrary1.dll
-c:\users\catalin\documents\visual studio 2015\Projects\Proiect_AppUI\App.Model\bin\Debug\WindowsFormsControlLibrary1.pdb
-c:\users\catalin\documents\visual studio 2015\Projects\Proiect_AppUI\App.Model\obj\Debug\App.Model.csprojResolveAssemblyReference.cache
-c:\users\catalin\documents\visual studio 2015\Projects\Proiect_AppUI\App.Model\obj\Debug\App.Model.dll
-c:\users\catalin\documents\visual studio 2015\Projects\Proiect_AppUI\App.Model\obj\Debug\App.Model.pdb
