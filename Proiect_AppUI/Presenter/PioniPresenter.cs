@@ -105,7 +105,7 @@ namespace Proiect_AppUI.Presenter
                 return;
             }
             var pion = GetPionDinCasuta(casuta);
-            if (pion == null)
+            if (pion == null || !_jucatori[_randJucator].Pioni.Contains(pion))
             {
                 MessageBox.Show("Nu ai pion in acea casuta");
                 return;
@@ -166,6 +166,7 @@ namespace Proiect_AppUI.Presenter
             }
 
             MutaPionInCasuta(pion, casuta, GetUrmatoareaPozitiePion(pion));
+            _aFacutMutarea = true;
         }
 
         private void ElibereazaCasuta(Casuta.UserControl.Casuta casuta)
