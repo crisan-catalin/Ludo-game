@@ -110,7 +110,7 @@ namespace Proiect_AppUI.Presenter
                 MessageBox.Show("Nu ai pion in acea casuta");
                 return;
             }
-
+            
             var umatoareaPozitie = GetUrmatoareaPozitiePion(pion);
 
             //Nu a dat 6 ca sa iasa
@@ -130,7 +130,24 @@ namespace Proiect_AppUI.Presenter
             IncearcaSaDemarcheziUrmatoareaPozitie(casuta);
             IncearcaSaMutiPionIn(casutaUrmatoarePozitie, pion);
 
-            _aFacutMutarea = true;
+            VerificaDacaACastigat();
+        }
+
+        private void VerificaDacaACastigat()
+        {
+            int sumaPozitiiPioni = 0;
+            foreach (var pion in _jucatori[_randJucator].Pioni)
+            {
+                sumaPozitiiPioni += pion.PozitiaCurenta;
+            }
+
+            if (sumaPozitiiPioni == Constants.Constants.SumaFinalaPozitiiPioni)
+            {
+                //add button for play again and quit
+                MessageBox.Show($"Felicitari {_jucatori[_randJucator].Nume}, ai castigat!");
+                _view.terminaTuraBtn.Enabled = false;
+                _view.aruncaZarulBtn.Enabled = false;
+            }
         }
 
         private void IncearcaSaMutiPionIn(Casuta.UserControl.Casuta casuta, Pion pion)
