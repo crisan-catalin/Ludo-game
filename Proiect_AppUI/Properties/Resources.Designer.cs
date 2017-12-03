@@ -61,6 +61,42 @@ namespace Proiect_AppUI.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Felicitari {0}, ai castigat!.
+        /// </summary>
+        internal static string ai_castigat_text {
+            get {
+                return ResourceManager.GetString("ai_castigat_text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to In acea casuta este un pion de-al tau.
+        /// </summary>
+        internal static string ai_deja_pion_in_acea_casuta_text {
+            get {
+                return ResourceManager.GetString("ai_deja_pion_in_acea_casuta_text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ai mutat deja.
+        /// </summary>
+        internal static string ai_mutat_deja_text {
+            get {
+                return ResourceManager.GetString("ai_mutat_deja_text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Trebuie sa dai 6 sa iesi.
+        /// </summary>
+        internal static string arunca_6_sa_iesi_text {
+            get {
+                return ResourceManager.GetString("arunca_6_sa_iesi_text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap blue {
@@ -267,6 +303,24 @@ namespace Proiect_AppUI.Properties {
             get {
                 object obj = ResourceManager.GetObject("logo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Nu ai pion in acea casuta.
+        /// </summary>
+        internal static string nu_ai_pion_in_acea_casuta_text {
+            get {
+                return ResourceManager.GetString("nu_ai_pion_in_acea_casuta_text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Nu mai poti muta pionul.
+        /// </summary>
+        internal static string nu_mai_ai_unde_muta_pionul_text {
+            get {
+                return ResourceManager.GetString("nu_mai_ai_unde_muta_pionul_text", resourceCulture);
             }
         }
         

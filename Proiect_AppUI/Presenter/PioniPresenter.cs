@@ -101,28 +101,28 @@ namespace Proiect_AppUI.Presenter
 
             if (_aFacutMutarea)
             {
-                MessageBox.Show("Ai mutat deja");
+                MessageBox.Show(Resources.ai_mutat_deja_text);
                 return;
             }
             var pion = GetPionDinCasuta(casuta);
             if (pion == null || !_jucatori[_randJucator].Pioni.Contains(pion))
             {
-                MessageBox.Show("Nu ai pion in acea casuta");
+                MessageBox.Show(Resources.nu_ai_pion_in_acea_casuta_text);
                 return;
             }
-            
+
             var umatoareaPozitie = GetUrmatoareaPozitiePion(pion);
 
             //Nu a dat 6 ca sa iasa
             if (umatoareaPozitie < 0)
             {
-                MessageBox.Show("Trebuie sa dai 6 sa iesi");
+                MessageBox.Show(Resources.arunca_6_sa_iesi_text);
                 return;
             }
 
             if (umatoareaPozitie > Constants.Constants.UltimaPozitie)
             {
-                MessageBox.Show("Nu mai poti muta pionul");
+                MessageBox.Show(Resources.nu_mai_ai_unde_muta_pionul_text);
                 return;
             }
 
@@ -144,7 +144,7 @@ namespace Proiect_AppUI.Presenter
             if (sumaPozitiiPioni == Constants.Constants.SumaFinalaPozitiiPioni)
             {
                 //add button for play again and quit
-                MessageBox.Show($"Felicitari {_jucatori[_randJucator].Nume}, ai castigat!");
+                MessageBox.Show(string.Format(Resources.ai_castigat_text, _jucatori[_randJucator].Nume));
                 _view.terminaTuraBtn.Enabled = false;
                 _view.aruncaZarulBtn.Enabled = false;
             }
@@ -158,7 +158,7 @@ namespace Proiect_AppUI.Presenter
 
                 if (pion.Imagine.Equals(pionUrmatoareaPozitie.Imagine))
                 {
-                    MessageBox.Show("In acea casuta este un pion de-al tau");
+                    MessageBox.Show(Resources.ai_deja_pion_in_acea_casuta_text);
                     return;
                 }
 
@@ -296,15 +296,7 @@ namespace Proiect_AppUI.Presenter
         //Vezi comm
         public void ZarAruncat()
         {
-//            Add method to check if player has at least one possible move
-//            if (_view.aruncaZarulBtn.Enabled && _valoareZar == Constants.Constants.ValoareMagicaZar && !_aFacutMutarea)
-//            {
-//                MessageBox.Show("Muta mai intai pionul");
-//                return;
-//            }
-
             _valoareZar = _zar.AruncaZar;
-            Console.WriteLine($"Valoare zar: {_valoareZar}");
 
             switch (_valoareZar)
             {

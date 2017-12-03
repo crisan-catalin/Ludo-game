@@ -117,6 +117,18 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="ai_castigat_text" xml:space="preserve">
+    <value>Felicitari {0}, ai castigat!</value>
+  </data>
+  <data name="ai_deja_pion_in_acea_casuta_text" xml:space="preserve">
+    <value>In acea casuta este un pion de-al tau</value>
+  </data>
+  <data name="ai_mutat_deja_text" xml:space="preserve">
+    <value>Ai mutat deja</value>
+  </data>
+  <data name="arunca_6_sa_iesi_text" xml:space="preserve">
+    <value>Trebuie sa dai 6 sa iesi</value>
+  </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="blue" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\blue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -180,6 +192,12 @@
   </data>
   <data name="logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="nu_ai_pion_in_acea_casuta_text" xml:space="preserve">
+    <value>Nu ai pion in acea casuta</value>
+  </data>
+  <data name="nu_mai_ai_unde_muta_pionul_text" xml:space="preserve">
+    <value>Nu mai poti muta pionul</value>
   </data>
   <data name="one" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\one.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
