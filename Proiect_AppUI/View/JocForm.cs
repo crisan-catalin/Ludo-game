@@ -38,14 +38,14 @@ namespace Proiect_AppUI
             set { numeJGalbenLbl.Text = value; }
         }
 
-        //make image gray/color
+        //Add image gray/color
         public bool AruncaZarulActivat
         {
             get { return aruncaZarulBtn.Enabled; }
             set { aruncaZarulBtn.Enabled = value; }
         }
 
-        //make image gray/color
+        //Add image gray/color
         public bool TerminaTuraActivat
         {
             get { return terminaTuraBtn.Enabled; }

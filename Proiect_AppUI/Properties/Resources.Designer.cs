@@ -61,7 +61,7 @@ namespace Proiect_AppUI.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Felicitari {0}, ai castigat!.
+        ///   Looks up a localized string similar to {0}, ai castigat!.
         /// </summary>
         internal static string ai_castigat_text {
             get {
@@ -297,6 +297,15 @@ namespace Proiect_AppUI.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Vreti sa incepeti urmatorul joc?.
+        /// </summary>
+        internal static string intreaba_joc_nou {
+            get {
+                return ResourceManager.GetString("intreaba_joc_nou", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap logo {
@@ -489,6 +498,15 @@ namespace Proiect_AppUI.Properties {
             get {
                 object obj = ResourceManager.GetObject("tileGrass_roadNorth", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Felicitari.
+        /// </summary>
+        internal static string titlu_felicitari {
+            get {
+                return ResourceManager.GetString("titlu_felicitari", resourceCulture);
             }
         }
         

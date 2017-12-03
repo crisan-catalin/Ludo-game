@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="ai_castigat_text" xml:space="preserve">
-    <value>Felicitari {0}, ai castigat!</value>
+    <value>{0}, ai castigat!</value>
   </data>
   <data name="ai_deja_pion_in_acea_casuta_text" xml:space="preserve">
     <value>In acea casuta este un pion de-al tau</value>
@@ -190,6 +190,9 @@
   <data name="info" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\info.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="intreaba_joc_nou" xml:space="preserve">
+    <value>Vreti sa incepeti urmatorul joc?</value>
+  </data>
   <data name="logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -249,6 +252,9 @@
   </data>
   <data name="tileGrass_roadNorth" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tileGrass_roadNorth.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="titlu_felicitari" xml:space="preserve">
+    <value>Felicitari</value>
   </data>
   <data name="two" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\two.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
