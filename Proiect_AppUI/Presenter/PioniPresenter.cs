@@ -84,12 +84,6 @@ namespace Proiect_AppUI.Presenter
             if (!casuta.EsteOcupata)
                 return;
 
-            //wrong
-            if (_view.aruncaZarulBtn.Enabled)
-            {
-                _aFacutMutarea = false;
-            }
-
             if (_aFacutMutarea)
             {
                 //Mesaj
@@ -122,9 +116,7 @@ namespace Proiect_AppUI.Presenter
             IncearcaSaDemarcheziUrmatoareaPozitie(casuta);
             IncearcaSaMutiPionIn(casutaUrmatoarePozitie, pion);
 
-            //wrong
-            if (_valoareZar != Constants.Constants.ValoareMagicaZar)
-                _aFacutMutarea = true;
+            _aFacutMutarea = true;
         }
 
         private void IncearcaSaMutiPionIn(Casuta.UserControl.Casuta casuta, Pion pion)
@@ -132,7 +124,7 @@ namespace Proiect_AppUI.Presenter
             if (casuta.EsteOcupata)
             {
                 var pionUrmatoareaPozitie = GetPionDinCasuta(casuta);
-                
+
                 if (pion.Imagine.Equals(pionUrmatoareaPozitie.Imagine))
                 {
                     MessageBox.Show("In acea casuta este un pion de-al tau");
@@ -312,6 +304,7 @@ namespace Proiect_AppUI.Presenter
                 _view.aruncaZarulBtn.Enabled = false;
                 _view.terminaTuraBtn.Enabled = true;
             }
+            _aFacutMutarea = false;
         }
 
         public void UrmatorulJucator()
@@ -324,7 +317,6 @@ namespace Proiect_AppUI.Presenter
 
             _view.aruncaZarulBtn.Enabled = true;
             _view.terminaTuraBtn.Enabled = false;
-            _aFacutMutarea = false;
 
             switch (_randJucator)
             {
