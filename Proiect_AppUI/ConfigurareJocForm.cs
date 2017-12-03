@@ -102,6 +102,11 @@ namespace Proiect_AppUI
 
         private void startBtn_Click(object sender, EventArgs e)
         {
+            IncepeJocul();
+        }
+
+        private void IncepeJocul()
+        {
             JocForm joc = new JocForm();
 
             if (fullscreenChckBox.Checked)
@@ -117,7 +122,18 @@ namespace Proiect_AppUI
 
             new PioniPresenter(joc);
 
-            joc.Closed += (s, args) => Close();
+            joc.Closed += (s, args) =>
+            {
+                var x = s as JocForm;
+                if (x != null && x.JocNou)
+                {
+                    Show();
+                }
+                else
+                {
+                    Close();
+                }
+            };
             joc.Show();
             Hide();
         }
