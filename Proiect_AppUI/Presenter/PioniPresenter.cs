@@ -8,12 +8,11 @@ namespace Proiect_AppUI.Presenter
 {
     public class PioniPresenter
     {
-        private List<Jucator> _jucatori;
-        private readonly Zar _zar;
-
         //private IJocView view k instead of JocForm
         private readonly JocForm _view;
 
+        private List<Jucator> _jucatori;
+        private readonly Zar _zar;
         private int _randJucator;
         private int _valoareZar;
         private bool _aFacutMutarea;
@@ -218,9 +217,9 @@ namespace Proiect_AppUI.Presenter
                 case 1:
                     return GetCasutaJucatorVerdeDePePozitia(pozitie);
                 case 2:
-                    return GetCasutaJucatorAlbastruDePePozitia(pozitie);
-                case 3:
                     return GetCasutaJucatorGalbenDePePozitia(pozitie);
+                case 3:
+                    return GetCasutaJucatorAlbastruDePePozitia(pozitie);
             }
             //throw new InvalidJucator;
             return null;
@@ -276,15 +275,12 @@ namespace Proiect_AppUI.Presenter
             {
                 case 0:
                     return pion.CasutaCurenta.PozitieRosu;
-
                 case 1:
                     return pion.CasutaCurenta.PozitieVerde;
-
                 case 2:
-                    return pion.CasutaCurenta.PozitieAlbastru;
-
-                case 3:
                     return pion.CasutaCurenta.PozitieGalben;
+                case 3:
+                    return pion.CasutaCurenta.PozitieAlbastru;
             }
             //throw new InvalidRandJucator;
             return 0;
@@ -351,10 +347,10 @@ namespace Proiect_AppUI.Presenter
                     _view.ImagineJucatorCurent = Resources.green;
                     break;
                 case 2:
-                    _view.ImagineJucatorCurent = Resources.blue;
+                    _view.ImagineJucatorCurent = Resources.yellow;
                     break;
                 case 3:
-                    _view.ImagineJucatorCurent = Resources.yellow;
+                    _view.ImagineJucatorCurent = Resources.blue;
                     break;
             }
         }
