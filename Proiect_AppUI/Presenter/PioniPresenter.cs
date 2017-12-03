@@ -81,16 +81,6 @@ namespace Proiect_AppUI.Presenter
                 return;
 
             var casutaUrmatoarePozitie = GetCasutaDePePozitia(umatoareaPozitie);
-            if (casutaUrmatoarePozitie.EsteOcupata)
-            {
-                var pionUrmatoareaPozitie = GetPionDinCasuta(casutaUrmatoarePozitie);
-                //In acea casuta este un pion de-al tau
-                if (_jucatori[_randJucator].Pioni.Contains(pionUrmatoareaPozitie))
-                {
-                    return;
-                }
-            }
-
             casutaUrmatoarePozitie.ImaginePion.Image = Resources.x;
         }
 
