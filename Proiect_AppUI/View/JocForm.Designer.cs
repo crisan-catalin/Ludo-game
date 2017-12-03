@@ -1474,15 +1474,15 @@
 
         private System.Windows.Forms.TableLayoutPanel containerPanel;
         private System.Windows.Forms.TableLayoutPanel plansaJocPanel;
-        public System.Windows.Forms.Label numeJGalbenLbl;
-        public System.Windows.Forms.Label numeJAlbastruLbl;
-        public System.Windows.Forms.Label numeJRosuLbl;
-        public System.Windows.Forms.Label numeJVerdeLbl;
+        private System.Windows.Forms.Label numeJGalbenLbl;
+        private System.Windows.Forms.Label numeJAlbastruLbl;
+        private System.Windows.Forms.Label numeJRosuLbl;
+        private System.Windows.Forms.Label numeJVerdeLbl;
         private System.Windows.Forms.TableLayoutPanel controalePanel;
-        public System.Windows.Forms.Button aruncaZarulBtn;
-        public System.Windows.Forms.Button terminaTuraBtn;
-        public System.Windows.Forms.PictureBox valoareZarPctrBox;
-        public System.Windows.Forms.PictureBox jucatorCurentPctrBox;
+        private System.Windows.Forms.Button aruncaZarulBtn;
+        private System.Windows.Forms.Button terminaTuraBtn;
+        private System.Windows.Forms.PictureBox valoareZarPctrBox;
+        private System.Windows.Forms.PictureBox jucatorCurentPctrBox;
         private Casuta.UserControl.Casuta acasaR1;
         private Casuta.UserControl.Casuta acasatR2;
         private Casuta.UserControl.Casuta acasaR3;

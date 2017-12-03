@@ -73,7 +73,7 @@
             this.numeJ4TextField.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.numeJ4TextField.Enabled = false;
             this.numeJ4TextField.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.numeJ4TextField.Location = new System.Drawing.Point(116, 231);
+            this.numeJ4TextField.Location = new System.Drawing.Point(116, 229);
             this.numeJ4TextField.Name = "numeJ4TextField";
             this.numeJ4TextField.Size = new System.Drawing.Size(227, 34);
             this.numeJ4TextField.TabIndex = 7;
@@ -83,7 +83,7 @@
             this.numeJ3TextField.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.numeJ3TextField.Enabled = false;
             this.numeJ3TextField.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.numeJ3TextField.Location = new System.Drawing.Point(116, 173);
+            this.numeJ3TextField.Location = new System.Drawing.Point(116, 168);
             this.numeJ3TextField.Name = "numeJ3TextField";
             this.numeJ3TextField.Size = new System.Drawing.Size(227, 34);
             this.numeJ3TextField.TabIndex = 6;
@@ -111,7 +111,7 @@
             // pictureBox4
             // 
             this.pictureBox4.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.pictureBox4.Location = new System.Drawing.Point(36, 173);
+            this.pictureBox4.Location = new System.Drawing.Point(36, 224);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(43, 41);
             this.pictureBox4.TabIndex = 3;
@@ -120,7 +120,7 @@
             // pictureBox3
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.LemonChiffon;
-            this.pictureBox3.Location = new System.Drawing.Point(36, 231);
+            this.pictureBox3.Location = new System.Drawing.Point(36, 166);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(43, 41);
             this.pictureBox3.TabIndex = 2;

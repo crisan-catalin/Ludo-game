@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Security.Policy;
+using System.Drawing;
 using System.Windows.Forms;
 using Proiect_AppUI.Presenter;
 
@@ -12,6 +12,56 @@ namespace Proiect_AppUI
         public List<Casuta.UserControl.Casuta> Casute { get; private set; }
         public List<string> NumeJucatori { get; set; }
         public int NumarJucatori { get; set; }
+
+        public string NumeJucatoriRosu
+        {
+            get { return numeJRosuLbl.Text; }
+            set { numeJRosuLbl.Text = value; }
+        }
+
+        public string NumeJucatoriVerde
+        {
+            get { return numeJVerdeLbl.Text; }
+            set { numeJVerdeLbl.Text = value; }
+        }
+
+        public string NumeJucatoriAlbastru
+        {
+            get { return numeJAlbastruLbl.Text; }
+            set { numeJAlbastruLbl.Text = value; }
+        }
+
+        public string NumeJucatoriGalben
+        {
+            get { return numeJGalbenLbl.Text; }
+            set { numeJGalbenLbl.Text = value; }
+        }
+
+        //make image gray/color
+        public bool AruncaZarulActivat
+        {
+            get { return aruncaZarulBtn.Enabled; }
+            set { aruncaZarulBtn.Enabled = value; }
+        }
+
+        //make image gray/color
+        public bool TerminaTuraActivat
+        {
+            get { return terminaTuraBtn.Enabled; }
+            set { terminaTuraBtn.Enabled = value; }
+        }
+
+        public Image ImagineValoareZar
+        {
+            get { return valoareZarPctrBox.BackgroundImage; }
+            set { valoareZarPctrBox.BackgroundImage = value; }
+        }
+
+        public Image ImagineJucatorCurent
+        {
+            get { return jucatorCurentPctrBox.BackgroundImage; }
+            set { jucatorCurentPctrBox.BackgroundImage = value; }
+        }
 
         public JocForm()
         {

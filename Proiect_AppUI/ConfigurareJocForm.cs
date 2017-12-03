@@ -57,22 +57,22 @@ namespace Proiect_AppUI
             switch (nrJucatoriTrckBr.Value)
             {
                 case 2:
-                    joc.numeJRosuLbl.Text = numeJ1TextField.Text;
-                    joc.numeJVerdeLbl.Text = numeJ2TextField.Text;
-                    joc.numeJGalbenLbl.Text = "";
-                    joc.numeJAlbastruLbl.Text = "";
+                    joc.NumeJucatoriRosu = numeJ1TextField.Text;
+                    joc.NumeJucatoriVerde = numeJ2TextField.Text;
+                    joc.NumeJucatoriAlbastru = "";
+                    joc.NumeJucatoriGalben = "";
                     break;
                 case 3:
-                    joc.numeJRosuLbl.Text = numeJ1TextField.Text;
-                    joc.numeJVerdeLbl.Text = numeJ2TextField.Text;
-                    joc.numeJGalbenLbl.Text = numeJ3TextField.Text;
-                    joc.numeJAlbastruLbl.Text = "";
+                    joc.NumeJucatoriRosu = numeJ1TextField.Text;
+                    joc.NumeJucatoriVerde = numeJ2TextField.Text;
+                    joc.NumeJucatoriGalben = numeJ3TextField.Text;
+                    joc.NumeJucatoriAlbastru = "";
                     break;
                 case 4:
-                    joc.numeJRosuLbl.Text = numeJ1TextField.Text;
-                    joc.numeJVerdeLbl.Text = numeJ2TextField.Text;
-                    joc.numeJGalbenLbl.Text = numeJ3TextField.Text;
-                    joc.numeJAlbastruLbl.Text = numeJ4TextField.Text;
+                    joc.NumeJucatoriRosu = numeJ1TextField.Text;
+                    joc.NumeJucatoriVerde = numeJ2TextField.Text;
+                    joc.NumeJucatoriGalben = numeJ3TextField.Text;
+                    joc.NumeJucatoriAlbastru = numeJ4TextField.Text;
                     break;
             }
         }

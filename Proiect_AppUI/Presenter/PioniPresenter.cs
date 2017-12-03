@@ -47,7 +47,7 @@ namespace Proiect_AppUI.Presenter
 
         public void IncearcaSaDemarcheziUrmatoareaPozitie(Casuta.UserControl.Casuta casuta)
         {
-            if (_aFacutMutarea || _view.valoareZarPctrBox.BackgroundImage == Resources.info)
+            if (_aFacutMutarea || _view.ImagineValoareZar == Resources.info)
                 return;
 
             var pion = GetPionDinCasuta(casuta);
@@ -67,7 +67,7 @@ namespace Proiect_AppUI.Presenter
 
         public void IncearcaSaMarcheziUrmatoareaPozitie(Casuta.UserControl.Casuta casuta)
         {
-            if (_aFacutMutarea || _view.valoareZarPctrBox.BackgroundImage == Resources.info)
+            if (_aFacutMutarea || _view.ImagineValoareZar == Resources.info)
                 return;
 
             var pion = GetPionDinCasuta(casuta);
@@ -135,8 +135,8 @@ namespace Proiect_AppUI.Presenter
             {
                 //add button for play again and quit
                 MessageBox.Show(string.Format(Resources.ai_castigat_text, _jucatori[_randJucator].Nume));
-                _view.terminaTuraBtn.Enabled = false;
-                _view.aruncaZarulBtn.Enabled = false;
+                _view.TerminaTuraActivat = false;
+                _view.AruncaZarulActivat = false;
             }
         }
 
@@ -291,59 +291,59 @@ namespace Proiect_AppUI.Presenter
             switch (_valoareZar)
             {
                 case 1:
-                    _view.valoareZarPctrBox.BackgroundImage = Resources.one;
+                    _view.ImagineValoareZar = Resources.one;
                     break;
                 case 2:
-                    _view.valoareZarPctrBox.BackgroundImage = Resources.two;
+                    _view.ImagineValoareZar = Resources.two;
                     break;
                 case 3:
-                    _view.valoareZarPctrBox.BackgroundImage = Resources.three;
+                    _view.ImagineValoareZar = Resources.three;
                     break;
                 case 4:
-                    _view.valoareZarPctrBox.BackgroundImage = Resources.four;
+                    _view.ImagineValoareZar = Resources.four;
                     break;
                 case 5:
-                    _view.valoareZarPctrBox.BackgroundImage = Resources.five;
+                    _view.ImagineValoareZar = Resources.five;
                     break;
                 case 6:
-                    _view.valoareZarPctrBox.BackgroundImage = Resources.six;
+                    _view.ImagineValoareZar = Resources.six;
                     break;
                 default:
-                    _view.valoareZarPctrBox.BackgroundImage = Resources.info;
+                    _view.ImagineValoareZar = Resources.info;
                     break;
             }
 
             if (_valoareZar != Constants.Constants.ValoareMagicaZar)
             {
-                _view.aruncaZarulBtn.Enabled = false;
-                _view.terminaTuraBtn.Enabled = true;
+                _view.AruncaZarulActivat = false;
+                _view.TerminaTuraActivat = true;
             }
             _aFacutMutarea = false;
         }
 
         public void UrmatorulJucator()
         {
-            _view.valoareZarPctrBox.BackgroundImage = Resources.info;
+            _view.ImagineValoareZar = Resources.info;
 
             _randJucator++;
             _randJucator %= _view.NumarJucatori;
 
-            _view.aruncaZarulBtn.Enabled = true;
-            _view.terminaTuraBtn.Enabled = false;
+            _view.AruncaZarulActivat = true;
+            _view.TerminaTuraActivat = false;
 
             switch (_randJucator)
             {
                 case 0:
-                    _view.jucatorCurentPctrBox.BackgroundImage = Resources.red;
+                    _view.ImagineJucatorCurent = Resources.red;
                     break;
                 case 1:
-                    _view.jucatorCurentPctrBox.BackgroundImage = Resources.green;
+                    _view.ImagineJucatorCurent = Resources.green;
                     break;
                 case 2:
-                    _view.jucatorCurentPctrBox.BackgroundImage = Resources.blue;
+                    _view.ImagineJucatorCurent = Resources.blue;
                     break;
                 case 3:
-                    _view.jucatorCurentPctrBox.BackgroundImage = Resources.yellow;
+                    _view.ImagineJucatorCurent = Resources.yellow;
                     break;
             }
         }
