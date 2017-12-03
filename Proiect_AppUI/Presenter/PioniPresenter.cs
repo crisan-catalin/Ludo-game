@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
+using System.Media;
 using System.Windows.Forms;
 using Proiect_AppUI.Model;
 using Proiect_AppUI.Properties;
@@ -16,6 +18,7 @@ namespace Proiect_AppUI.Presenter
         private int _randJucator;
         private int _valoareZar;
         private bool _aFacutMutarea;
+        private readonly SoundPlayer _soundPlayer;
 
         public PioniPresenter(JocForm view)
         {
@@ -25,6 +28,14 @@ namespace Proiect_AppUI.Presenter
             InitializeazaJucatori(_view.NumarJucatori);
             InitializeazaVariabileJoc();
             _zar = new Zar();
+            _soundPlayer = new SoundPlayer();
+            EfectSunet(Resources.start_game);
+        }
+
+        private void EfectSunet(UnmanagedMemoryStream numeFisier)
+        {
+            _soundPlayer.Stream = numeFisier;
+            _soundPlayer.Play();
         }
 
         private void InitializeazaJucatori(int numarJucatori)
@@ -136,6 +147,8 @@ namespace Proiect_AppUI.Presenter
                 _view.TerminaTuraActivat = false;
                 _view.AruncaZarulActivat = false;
 
+                EfectSunet(Resources.winner);
+
                 var doresteJocNou = MessageBox.Show(
                     $"{string.Format(Resources.ai_castigat_text, GetNumeJucator(_randJucator))}\n{Resources.intreaba_joc_nou}",
                     Resources.titlu_felicitari, MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation);
@@ -165,9 +178,15 @@ namespace Proiect_AppUI.Presenter
                 }
 
                 MutaPionInCasa(pionUrmatoareaPozitie);
+                EfectSunet(Resources.go_home);
+            }
+            else
+            {
+                EfectSunet(Resources.move);
             }
 
             MutaPionInCasuta(pion, casuta, GetUrmatoareaPozitiePion(pion));
+            
             _aFacutMutarea = true;
         }
 
@@ -295,6 +314,7 @@ namespace Proiect_AppUI.Presenter
         public void ZarAruncat()
         {
             _valoareZar = _zar.AruncaZar;
+            EfectSunet(Resources.roll_dice);
 
             switch (_valoareZar)
             {
