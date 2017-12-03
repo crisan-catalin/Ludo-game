@@ -42,6 +42,7 @@
             this.nrJucatoriTrckBr = new System.Windows.Forms.TrackBar();
             this.fullscreenChckBox = new System.Windows.Forms.CheckBox();
             this.startBtn = new System.Windows.Forms.Button();
+            this.fullscreenInfoLbl = new System.Windows.Forms.Label();
             this.numeJucatoriGrpBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -195,11 +196,21 @@
             this.startBtn.UseVisualStyleBackColor = true;
             this.startBtn.Click += new System.EventHandler(this.startBtn_Click);
             // 
+            // fullscreenInfoLbl
+            // 
+            this.fullscreenInfoLbl.AutoSize = true;
+            this.fullscreenInfoLbl.Location = new System.Drawing.Point(301, 511);
+            this.fullscreenInfoLbl.Name = "fullscreenInfoLbl";
+            this.fullscreenInfoLbl.Size = new System.Drawing.Size(159, 17);
+            this.fullscreenInfoLbl.TabIndex = 14;
+            this.fullscreenInfoLbl.Text = "(Press ESC to minimize)";
+            // 
             // ConfigurareJocForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(777, 693);
+            this.ClientSize = new System.Drawing.Size(777, 671);
+            this.Controls.Add(this.fullscreenInfoLbl);
             this.Controls.Add(this.numeJucatoriGrpBox);
             this.Controls.Add(this.trackBarLbl);
             this.Controls.Add(this.nrJucatoriLbl);
@@ -239,6 +250,7 @@
         private System.Windows.Forms.TrackBar nrJucatoriTrckBr;
         private System.Windows.Forms.CheckBox fullscreenChckBox;
         private System.Windows.Forms.Button startBtn;
+        private System.Windows.Forms.Label fullscreenInfoLbl;
     }
 }
 
