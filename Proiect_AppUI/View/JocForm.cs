@@ -8,6 +8,7 @@ namespace Proiect_AppUI
 {
     public partial class JocForm : Form
     {
+        public bool JocNou { get; set; }
         public PioniPresenter Presenter { get; set; }
         public List<Casuta.UserControl.Casuta> Casute { get; private set; }
         public List<string> NumeJucatori { get; set; }

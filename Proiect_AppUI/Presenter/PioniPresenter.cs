@@ -133,10 +133,22 @@ namespace Proiect_AppUI.Presenter
 
             if (sumaPozitiiPioni == Constants.Constants.SumaFinalaPozitiiPioni)
             {
-                //add button for play again and quit
-                MessageBox.Show(string.Format(Resources.ai_castigat_text, _jucatori[_randJucator].Nume));
                 _view.TerminaTuraActivat = false;
                 _view.AruncaZarulActivat = false;
+
+                var doresteJocNou = MessageBox.Show(
+                    $"{string.Format(Resources.ai_castigat_text, GetNumeJucator(_randJucator))}\n{Resources.intreaba_joc_nou}",
+                    Resources.titlu_felicitari, MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation);
+
+                if (doresteJocNou == DialogResult.Yes)
+                {
+                    _view.JocNou = true;
+                }
+                else
+                {
+                    _view.JocNou = false;
+                }
+                _view.Close();
             }
         }
 
@@ -283,7 +295,6 @@ namespace Proiect_AppUI.Presenter
             return GetPozitieCurentaPion(pion) + _valoareZar;
         }
 
-        //Vezi comm
         public void ZarAruncat()
         {
             _valoareZar = _zar.AruncaZar;
