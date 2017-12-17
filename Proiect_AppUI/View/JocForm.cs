@@ -4,11 +4,13 @@ using System.Drawing;
 using System.Windows.Forms;
 using Proiect_AppUI.Presenter;
 using Proiect_AppUI.Properties;
+using Proiect_AppUI.View;
 
 namespace Proiect_AppUI
 {
     public partial class JocForm : Form
     {
+        private InstructiuniForm _instructiuniForm;
         public bool JocNou { get; set; }
         public PioniPresenter Presenter { get; set; }
         public List<Casuta.UserControl.Casuta> Casute { get; private set; }
@@ -304,6 +306,29 @@ namespace Proiect_AppUI
                 WindowState = FormWindowState.Normal;
                 TopMost = false;
             }
+        }
+
+        private void newGameToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            var jocNou = MessageBox.Show(Resources.text_joc_nou, Resources.titlu_joc_nou, MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question);
+            Presenter.JocNou(jocNou);
+        }
+
+        private void parasesteJoculToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var jocNou = MessageBox.Show(Resources.text_exit, Resources.titlu_exit, MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question);
+            Presenter.TerminaJoc(jocNou);
+        }
+
+        private void instructiuniToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (_instructiuniForm == null)
+            {
+                _instructiuniForm = new InstructiuniForm();
+            }
+            _instructiuniForm.Show();
         }
     }
 }

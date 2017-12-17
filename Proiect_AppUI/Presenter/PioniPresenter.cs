@@ -153,14 +153,23 @@ namespace Proiect_AppUI.Presenter
                     $"{string.Format(Resources.ai_castigat_text, GetNumeJucator(_randJucator))}\n{Resources.intreaba_joc_nou}",
                     Resources.titlu_felicitari, MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation);
 
-                if (doresteJocNou == DialogResult.Yes)
-                {
-                    _view.JocNou = true;
-                }
-                else
-                {
-                    _view.JocNou = false;
-                }
+                TerminaJoc(doresteJocNou);
+            }
+        }
+
+        public void JocNou(DialogResult raspuns)
+        {
+            if (raspuns == DialogResult.Yes)
+            {
+                _view.JocNou = true;
+                _view.Close();
+            }
+        }
+
+        public void TerminaJoc(DialogResult raspuns)
+        {
+            if (raspuns == DialogResult.Yes)
+            {
                 _view.Close();
             }
         }
@@ -186,7 +195,7 @@ namespace Proiect_AppUI.Presenter
             }
 
             MutaPionInCasuta(pion, casuta, GetUrmatoareaPozitiePion(pion));
-            
+
             _aFacutMutarea = true;
         }
 

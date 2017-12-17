@@ -487,6 +487,24 @@ namespace Proiect_AppUI.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Esti sigur ca doresti sa parasesti jocul?.
+        /// </summary>
+        internal static string text_exit {
+            get {
+                return ResourceManager.GetString("text_exit", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Esti sigur ca doresti sa incepi un alt joc?.
+        /// </summary>
+        internal static string text_joc_nou {
+            get {
+                return ResourceManager.GetString("text_joc_nou", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap three {
@@ -557,11 +575,29 @@ namespace Proiect_AppUI.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Paraseste jocul.
+        /// </summary>
+        internal static string titlu_exit {
+            get {
+                return ResourceManager.GetString("titlu_exit", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Felicitari.
         /// </summary>
         internal static string titlu_felicitari {
             get {
                 return ResourceManager.GetString("titlu_felicitari", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Incepe joc nou.
+        /// </summary>
+        internal static string titlu_joc_nou {
+            get {
+                return ResourceManager.GetString("titlu_joc_nou", resourceCulture);
             }
         }
         

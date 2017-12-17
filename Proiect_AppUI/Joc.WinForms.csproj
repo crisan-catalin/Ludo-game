@@ -53,6 +53,12 @@
       <DependentUpon>ConfigurareJocForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Model\Zar.cs" />
+    <Compile Include="View\InstructiuniForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\InstructiuniForm.Designer.cs">
+      <DependentUpon>InstructiuniForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\JocForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -67,6 +73,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="ConfigurareJocForm.resx">
       <DependentUpon>ConfigurareJocForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\InstructiuniForm.resx">
+      <DependentUpon>InstructiuniForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\JocForm.resx">
       <DependentUpon>JocForm.cs</DependentUpon>
