@@ -5,3 +5,4 @@ C:\Users\Catalin\Documents\Visual Studio 2015\Projects\Proiect_AppUI\WindowsForm
 C:\Users\Catalin\Documents\Visual Studio 2015\Projects\Proiect_AppUI\WindowsFormsControlLibrary1\obj\Debug\Casuta.UserControl.csproj.GenerateResource.Cache
 C:\Users\Catalin\Documents\Visual Studio 2015\Projects\Proiect_AppUI\WindowsFormsControlLibrary1\obj\Debug\WindowsFormsControlLibrary1.dll
 C:\Users\Catalin\Documents\Visual Studio 2015\Projects\Proiect_AppUI\WindowsFormsControlLibrary1\obj\Debug\WindowsFormsControlLibrary1.pdb
+C:\Users\Catalin\documents\visual studio 2015\Projects\Proiect_AppUI\WindowsFormsControlLibrary1\obj\Debug\Casuta.UserControl.csprojResolveAssemblyReference.cache
