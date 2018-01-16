@@ -17,25 +17,25 @@ namespace Proiect_AppUI
         public List<string> NumeJucatori { get; set; }
         public int NumarJucatori { get; set; }
 
-        public string NumeJucatoriRosu
+        public string NumeJucatorRosu
         {
             get { return numeJRosuLbl.Text; }
             set { numeJRosuLbl.Text = value; }
         }
 
-        public string NumeJucatoriVerde
+        public string NumeJucatorVerde
         {
             get { return numeJVerdeLbl.Text; }
             set { numeJVerdeLbl.Text = value; }
         }
 
-        public string NumeJucatoriAlbastru
+        public string NumeJucatorAlbastru
         {
             get { return numeJAlbastruLbl.Text; }
             set { numeJAlbastruLbl.Text = value; }
         }
 
-        public string NumeJucatoriGalben
+        public string NumeJucatorGalben
         {
             get { return numeJGalbenLbl.Text; }
             set { numeJGalbenLbl.Text = value; }

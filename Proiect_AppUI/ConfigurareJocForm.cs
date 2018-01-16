@@ -57,22 +57,22 @@ namespace Proiect_AppUI
             switch (nrJucatoriTrckBr.Value)
             {
                 case 2:
-                    joc.NumeJucatoriRosu = numeJ1TextField.Text;
-                    joc.NumeJucatoriVerde = numeJ2TextField.Text;
-                    joc.NumeJucatoriAlbastru = "";
-                    joc.NumeJucatoriGalben = "";
+                    joc.NumeJucatorRosu = numeJ1TextField.Text;
+                    joc.NumeJucatorVerde = numeJ2TextField.Text;
+                    joc.NumeJucatorAlbastru = "";
+                    joc.NumeJucatorGalben = "";
                     break;
                 case 3:
-                    joc.NumeJucatoriRosu = numeJ1TextField.Text;
-                    joc.NumeJucatoriVerde = numeJ2TextField.Text;
-                    joc.NumeJucatoriGalben = numeJ3TextField.Text;
-                    joc.NumeJucatoriAlbastru = "";
+                    joc.NumeJucatorRosu = numeJ1TextField.Text;
+                    joc.NumeJucatorVerde = numeJ2TextField.Text;
+                    joc.NumeJucatorGalben = numeJ3TextField.Text;
+                    joc.NumeJucatorAlbastru = "";
                     break;
                 case 4:
-                    joc.NumeJucatoriRosu = numeJ1TextField.Text;
-                    joc.NumeJucatoriVerde = numeJ2TextField.Text;
-                    joc.NumeJucatoriGalben = numeJ3TextField.Text;
-                    joc.NumeJucatoriAlbastru = numeJ4TextField.Text;
+                    joc.NumeJucatorRosu = numeJ1TextField.Text;
+                    joc.NumeJucatorVerde = numeJ2TextField.Text;
+                    joc.NumeJucatorGalben = numeJ3TextField.Text;
+                    joc.NumeJucatorAlbastru = numeJ4TextField.Text;
                     break;
             }
         }
@@ -122,10 +122,10 @@ namespace Proiect_AppUI
 
             new PioniPresenter(joc);
 
-            joc.Closed += (s, args) =>
+            joc.Closed += (sender, args) =>
             {
-                var x = s as JocForm;
-                if (x != null && x.JocNou)
+                var jocForm = sender as JocForm;
+                if (jocForm != null && jocForm.JocNou)
                 {
                     Show();
                 }
