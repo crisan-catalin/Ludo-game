@@ -203,7 +203,7 @@
             this.fullscreenInfoLbl.Name = "fullscreenInfoLbl";
             this.fullscreenInfoLbl.Size = new System.Drawing.Size(159, 17);
             this.fullscreenInfoLbl.TabIndex = 14;
-            this.fullscreenInfoLbl.Text = "(Press ESC to minimize)";
+            this.fullscreenInfoLbl.Text = "(Apasa ESC sa micsorezi)";
             // 
             // ConfigurareJocForm
             // 
