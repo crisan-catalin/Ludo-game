@@ -1,12 +1,20 @@
 ﻿using System;
+using System.Runtime.CompilerServices;
 
 namespace Proiect_AppUI.Model
 {
     public class Zar
     {
-        public int AruncaZar
+        private Random _random;
+
+        public int AruncaZar()
         {
-            get { return new Random().Next(1, 7); }
+            if (_random == null)
+            {
+                _random = new Random();
+            }
+
+            return _random.Next(1, 7);
         }
     }
 }
