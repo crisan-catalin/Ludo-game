@@ -10,9 +10,7 @@ namespace Proiect_AppUI.Presenter
 {
     public class PioniPresenter
     {
-        //private IJocView view k instead of JocForm
         private readonly JocForm _view;
-
         private List<Jucator> _jucatori;
         private readonly Zar _zar;
         private int _randJucator;
@@ -56,6 +54,25 @@ namespace Proiect_AppUI.Presenter
             _view.TerminaTuraActivat = false;
         }
 
+        public void IncearcaSaMarcheziUrmatoareaPozitie(Casuta.UserControl.Casuta casuta)
+        {
+            if (_aFacutMutarea || _view.ImagineValoareZar == Resources.info)
+                return;
+
+            var pion = GetPionDinCasuta(casuta);
+            if (pion == null || !_jucatori[_randJucator].Pioni.Contains(pion))
+            {
+                return;
+            }
+
+            var umatoareaPozitie = GetUrmatoareaPozitiePion(pion);
+            if (umatoareaPozitie < 0 || umatoareaPozitie > Constants.Constants.UltimaPozitie)
+                return;
+
+            var casutaUrmatoarePozitie = GetCasutaDePePozitia(umatoareaPozitie);
+            casutaUrmatoarePozitie.ImaginePion.Image = Resources.x;
+        }
+
         public void IncearcaSaDemarcheziUrmatoareaPozitie(Casuta.UserControl.Casuta casuta)
         {
             if (_aFacutMutarea || _view.ImagineValoareZar == Resources.info)
@@ -74,25 +91,6 @@ namespace Proiect_AppUI.Presenter
             var casutaUrmatoarePozitie = GetCasutaDePePozitia(umatoareaPozitie);
 
             casutaUrmatoarePozitie.ImaginePion.Image = null;
-        }
-
-        public void IncearcaSaMarcheziUrmatoareaPozitie(Casuta.UserControl.Casuta casuta)
-        {
-            if (_aFacutMutarea || _view.ImagineValoareZar == Resources.info)
-                return;
-
-            var pion = GetPionDinCasuta(casuta);
-            if (pion == null || !_jucatori[_randJucator].Pioni.Contains(pion))
-            {
-                return;
-            }
-
-            var umatoareaPozitie = GetUrmatoareaPozitiePion(pion);
-            if (umatoareaPozitie < 0 || umatoareaPozitie > Constants.Constants.UltimaPozitie)
-                return;
-
-            var casutaUrmatoarePozitie = GetCasutaDePePozitia(umatoareaPozitie);
-            casutaUrmatoarePozitie.ImaginePion.Image = Resources.x;
         }
 
         public void IncearcaSaMutiPionDin(Casuta.UserControl.Casuta casuta)
@@ -213,7 +211,6 @@ namespace Proiect_AppUI.Presenter
             pion.CasutaCurenta.EsteOcupata = true;
             pion.PozitiaCurenta = pozitieCasuta;
             casuta.ImaginePion.BackgroundImage = pion.Imagine;
-            _aFacutMutarea = true;
         }
 
         private void MutaPionInCasa(Pion pion)
@@ -322,7 +319,7 @@ namespace Proiect_AppUI.Presenter
 
         public void ZarAruncat()
         {
-            _valoareZar = _zar.AruncaZar;
+            _valoareZar = _zar.AruncaZar();
             EfectSunet(Resources.roll_dice);
 
             switch (_valoareZar)
