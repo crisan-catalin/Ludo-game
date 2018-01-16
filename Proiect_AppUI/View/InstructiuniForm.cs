@@ -13,7 +13,6 @@ namespace Proiect_AppUI.View
         private void InstructiuniForm_Closing(object sender, CancelEventArgs e)
         {
             Hide();
-            Parent = null;
             e.Cancel = true;
         }
     }
