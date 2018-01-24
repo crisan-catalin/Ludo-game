@@ -1,5 +1,4 @@
 # Ludo-game
-Ludo game
 
 Start game menu:
 
